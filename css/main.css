@@ -280,7 +280,7 @@ a:hover {
     margin:0px auto;
 }
 #rotator {
-  background: url(<img src="http://ericaremmele.com/rotator/rotator.php">) no-repeat center top;
+  background: url(http://ericaremmele.com/rotator/rotator.php) no-repeat center top;
   background-size: cover;
   margin-top: 0px;
   width: auto;
