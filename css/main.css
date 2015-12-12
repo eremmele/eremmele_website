@@ -1,4 +1,4 @@
-/* 
+/* Copyright (c) 2015 Erica Remmele except where noted */
 
 /*
 * Skeleton V2.0.4
@@ -9,23 +9,6 @@
 * 12/29/2014
 */
 
-
-/* Table of contents
-––––––––––––––––––––––––––––––––––––––––––––––––––
-- Grid
-- Base Styles
-- Typography
-- Links
-- Buttons
-- Forms
-- Lists
-- Code
-- Tables
-- Spacing
-- Utilities
-- Clearing
-- Media Queries
-*/
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400);
 
@@ -122,7 +105,7 @@
 html is set to 62.5% so that all the REM measurements throughout Skeleton
 are based on 10px sizing. So basically 1.5rem = 15px :) */
 
-/*my note- tracking value of 1000 is equal to 1 em in CSS--convert to rem*/
+/* my note- tracking value of 1000 is equal to 1 em in CSS--convert to rem*/
 
 html {
   font-size: 62.5%; 
@@ -136,11 +119,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   color: #fff; 
   background-color: #000;
-  /*background: url("../images/cover1-replace.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover; /* For WebKit
-    -moz-background-size: cover;    /* Mozilla
-    -o-background-size: cover;      /* Opera
-    background-size: cover;         /* Generic*/ }
+}
 
 /* Navigation
 –––––––––––––––––––––––––––––––––––––––––––––––––– */ 
