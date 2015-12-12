@@ -192,7 +192,7 @@ if ($img!=null) {
 	readfile($img);
 } else {
 	if ( function_exists('imagecreate') ) {
-		header ("Content-type: image/jpg");
+		header ("Content-type: image/png");
 		$im = @imagecreate (100, 100)
 		    or die ("Cannot initialize new GD image stream");
 		$background_color = imagecolorallocate ($im, 255, 255, 255);
