@@ -35,6 +35,7 @@
   <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
   <script src="js/jquery.js"></script>
 </head>
+
 <body>
 
   <!-- Primary Page Layout
@@ -44,10 +45,11 @@
    <!--\\\\\\\\\\\\\\\\\\\\\\\\navigation here////////////////////////--> 
 
   <nav>
-    <div id="menu" class="menu">
-      <ul class="menu-items">
-        <br><div class="float-left"><li><a href="index.html"><h1>Erica Remmele</h1></a></li></div><!--href="#home"-->
-        <div class="float-right"><li><a href="#" id="changeText" onclick="document.getElementById('newcontent').className = 'opac';"><h1>About</h1></a></li></div>
+    <div id="menu" class="menu menu-items">
+        <ul>
+            <li class="float-left"><a href="index.html"><h1>Erica Remmele</h1></a><!--href="#home"--></li>
+            <li class="float-right"><a href="#" id="changeText" onclick="document.getElementById('newcontent').className = 'opac';"><h1>About</h1></a></li>
+        
         <!--<div class="float-center"><li><h1>site under construction - pardon the bugs<br>check out <a href="behance.net/eremmele">my behance</a> in the meantime</h1></li></div>-->
       </ul>
     </div>
@@ -68,109 +70,138 @@
     </div>--> 
 
     <!--\\\\\\\\\\\\\\\\\\\\\\\\main shit////////////////////////--> 
+<!--\\\\\\\\\\\\\\\\\\\\\\\\main shit////////////////////////--> 
+    
     <div id="one" class="fade">
-      <div id="newcontent">
-        <p>Graphic Designer based in Plano, TX, and Baltimore, MD.</p>
-        <br>
-        <p>How far away stirred by starlight Flatland Cambrian explosion. Cosmic ocean ship of the imagination. Paroxysm of global death venture as a patch of light white dwarf preserve and cherish that pale blue dot. Sea of Tranquility venture consciousness billions upon billions. Venture as a patch of light bits of moving fluff Hypatia finite but unbounded citizens of distant epochs, star stuff harvesting star light Flatland! Drake Equation Jean-François Champollion, Orion's sword birth. Rich in heavy atoms, corpus callosum and billions upon billions upon billions upon billions upon billions upon billions upon billions.</p>
-        <br> 
-        <p>Feel free to contact me at <a href="mailto:ericaremmele@gmail.com">ericaremmele@gmail.com</a>.</p>
-      </div>
-      <div id="content"><div id="logo">
-        <div id="center-logo">
 
-
-          <img src="images/logo-large.png" alt="logo" width="171.399px;">
-
-
+        <div id="newcontent"><!--NEED FOR JS-->
+          <p>Graphic Designer based in Plano, TX, and Baltimore, MD.</p>
+          <br>
+          <p>How far away stirred by starlight Flatland Cambrian explosion. Cosmic ocean ship of the imagination. Paroxysm of global death venture as a patch of light white dwarf preserve and cherish that pale blue dot. Sea of Tranquility venture consciousness billions upon billions. Venture as a patch of light bits of moving fluff Hypatia finite but unbounded citizens of distant epochs, star stuff harvesting star light Flatland! Drake Equation Jean-François Champollion, Orion's sword birth. Rich in heavy atoms, corpus callosum and billions upon billions upon billions upon billions upon billions upon billions upon billions.</p>
+          <br> 
+          <p>Feel free to contact me at <a href="mailto:ericaremmele@gmail.com">ericaremmele@gmail.com</a>.</p>
         </div>
-        <a href="#blackholes1"><h1 class="h1 box seework">see work</h1></a> <!--convert to scroll-->
-      </div></div>
-      <div id="gradient-">&nbsp;</div>
-      <div id="rotator">&nbsp;</div>
-      <!--<img src="../ericaremmele/images/cover1-replace.jpg" width="100%" class="opacity">-->
+        
+        <div id="content" class="container"><!--NEED FOR JS-->
+          <div class="row">
+            <div id="logo" class="center-column">
+              <div class="center-logo"><img src="images/logo-large.png" alt="logo" width="171.399px"></div>
+              <div><a href="#blackholes1"><h1 class="h1 box seework">see work</h1></a></div>
+            </div>
+        </div>
+        </div>
+        <div id="gradient-">&nbsp;</div>
+        <div id="rotator" class="sixteen-columns">&nbsp;</div>
+        <!--<img src="../ericaremmele/images/cover1-replace.jpg" width="100%" class="opacity">-->
 
     </div>
 
-
+<!--//////////////////////////////////////////////////////////////-->
     <div id="two">
 
-      <div class="row">
+      <div class="container">
+        <div class="row">
+          <br>
         <!--BLACK HOLES 1-->
-        <div id="DIV1" class="covers-position">
-          <div class="title-bottom"><h1 class="h1 box">black holes ii</h1></div>
-          <div id="blackholes1"></div> <!--404px-->
-        </div>
-        <!--BLACK HOLES 2-->
-        <div class="covers-position">
-          <div class="title-right"><h1 class="h1 box">black holes i</h1></div>
-          <a href="blackholes1.html"><div id="blackholes2"></div></a>
-        </div>
-
+          <div id="DIV1" class="one-third column">
+            <div class="title-bottom"><h1 class="h1 box">black holes ii</h1></div>
+            <a href="blackholes2.html"><div id="blackholes1"></div></a> <!--404px-->
+            
+          </div>
+          <!-- "eight-columns offset-by-four" style="margin-left:-2%;margin-top:32.5%;position:absolute" -->
+          
+          <!--BLACK HOLES 2-->
+          <div class="one-third column">
+            <div class="title-bottom"><h1 class="h1 box">black holes i</h1></div>
+            <a href="blackholes1.html"><div id="blackholes2"></div></a>
+          </div>
       </div>
+    </div>
 
-      <!-- TWO --> <!--QUOTED-->
-      <div class="row">
-        <div class="covers-position covers-right">
-          <div class="title-left"><h1 class="h1 box">quoted</h1></div>
-          <div id="quoted"></div>
-        </div>
-      </div>   
+     <!-- TWO --> <!--QUOTED-->
+    <div class="container">
+        <div class="row">
+          <div class="one-third column offset-by-two-thirds">
+            <div class="title-bottom"><h1 class="h1 box">quoted</h1></div>
+            <a href="quoted.html"><div id="quoted"></div></a>
+          </div></div>
+    </div>    
 
-      <!-- THREE --> <!--FEEL FEEL-->
-      <div class="row">
-        <div class="covers-position covers-center">
-          <div class="title-right"><h1 class="h1 box">feel feel<br>feel fest</h1></div>
-          <div id="feelfeelfeelfest"></div>
+<!-- THREE --> <!--FEEL FEEL-->
+    <div class="container">
+        <div class="row">
+          <div class="one-third column offset-by-one-third">
+          <div class="title-bottom"><h1 class="h1 box">feel feel<br>feel fest</h1></div>
+          <a href="feelfeelfeelfest.html"><div id="feelfeelfeelfest"></div></a>
         </div>
       </div> 
+    </div>
 
       <!-- FOUR --> <!--LIST-->
-      <div class="row">
-
-        <div class="covers-position">
-          <div class="title-right"><h1 class="h1 box">list</h1></div>
-          <div><img src="images/list-replace.png" alt="list" width="404px;"></div>
+    <div class="container">
+        <div class="row">
+          <div class="one-third column">
+          <div class="title-bottom"><h1 class="h1 box">list</h1></div>
+          <a href="list.html"><div id="list"></div></a>
         </div>
+      </div>
+   </div>
         <!--COMPETITIVE-->
-        <div class="covers-position covers-center">
-          <div class="title-left"><h1 class="h1 box">competitive<br>scholarship<br>portfolio</h1></div>
-          <div><img src="images/competitivescholarshipportfolio-replace.jpg" alt="competitive scholarship portfolio" width="404px;"></div>
+    <div class="container">
+        <div class="row">
+          <div class="one-third column offset-by-one-third">
+          <div class="title-bottom"><h1 class="h1 box">competitive<br>scholarship<br>portfolio</h1></div>
+          <a href="competitivescholarshipportfolio.html"><div id="competitivescholarshipportfolio"></div></a>
         </div>
 
       </div>
+    </div>
 
       <!-- FIVE --><!--WHAT WE'RE MISSING-->
-      <div class="row">
-
-        <div class="covers-position">
+    <div class="container">
+        <div class="row">
+          <div class="one-third column">
           <div class="title-bottom"><h1 class="h1 box">what we're<br>missing</h1></div>
-          <div><img src="images/whatweremissing-replace.jpg" alt="what we're missing" width="404px;"></div>
+          <a href="whatweremissing.html"><div id="whatweremissing"></div></a>
         </div>
 
       </div>
+    </div>
+  </div>
 
       <!-- SIX --><!--PAINTING II-->
-      <div class="row covers-center">
-
-        <div class="covers-position">
+    <div class="container">
+        <div class="row">
+        <div class="one-third column offset-by-one-third">
           <div class="title-bottom"><h1 class="h1 box">painting II</h1></div>
-          <div><img src="images/paintingii-replace.jpg" alt="Painting II" width="404px;"></div>
+          <a href="painting2.html"><div id="paintingii"></div></a>
         </div>
         <!--2014-->
-        <div class="covers-position" margin-left:"67.98%">
+        <div class="one-third column offset-by-one-third">
           <div class="title-bottom"><h1 class="h1 box">2014 Mica<br>Competitive<br>Scholarship<br>Portfolio</h1></div>
-          </div><img src="images/2014-replace.jpg" alt="2014 MICA Competitive Scholarship Portfolio" width="404px;"></div>
+          <a href="2014.html"><div id="twentyfourteen"></div></a>
         </div>
+    </div>
+  </div>
+
+
+
+</div>
+    
+
 
 <footer>
-  All works © Erica Remmele 2015. Please do not reproduce without the expressed written consent of Erica Remmele.
+  <div> <p>All works © Erica Remmele 2015. Please do not reproduce without the expressed written consent of Erica Remmele. </p>
+  </div>
 </footer>
+
+
     <script type="text/javascript" src="js/smooth-scroll.js"></script>
     <script type="text/javascript" src="js/glitch.js"></script>
     <script src="js/gradient.js"></script>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  </div>
 </body>
 </html>
