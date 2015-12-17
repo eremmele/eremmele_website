@@ -104,7 +104,7 @@
 */
 
 
-	$folder = 'http://ericaremmele.com/rotator/';
+	$folder = '.';
 
 
 /*	

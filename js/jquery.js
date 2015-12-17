@@ -1,3 +1,5 @@
+//ABOUT effect
+
 $(window).scroll(function () {
     var scrollTop = $(window).scrollTop();
     var height = $(window).height();
