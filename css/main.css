@@ -307,7 +307,7 @@ a:hover {
 }
 #newcontent {
     margin-left: 38%; /*REPOSITION LATER*/
-    margin-top: 25%;
+    margin-top: 22%;
     max-width: 30%;
     text-align: left;
     font-size: 1.25rem; /*2.1rem*/ 
@@ -324,14 +324,24 @@ a:hover {
     opacity: 0;
     filter: alpha(opacity=0); /* For IE8 and earlier */
 }
+
 #rotator {
+  background: no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 112.5rem;
+}
+
+/* #rotator {  /* PHP ONLY - CANT USE ON GITHUB
   background-image: url(/rotator/rotator.php);
   background-size: cover;
   background-repeat: no-repeat;
   margin-top: 0px;
   width: auto;
-  height: 1000px; /*1127.387px;*/
-  z-index: 1;
+  height: 1000px; /*1127.387px;
+  z-index: 1;*/
 }
 #gradient {
   width: 100%;
