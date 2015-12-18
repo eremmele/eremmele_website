@@ -264,8 +264,9 @@ a:hover {
 }
 .seework {
     float: center;
-    padding: 2.5rem 8rem 2.5rem 8rem;
+    padding: 2.5rem 2.5rem 2.5rem 2.5rem;
     z-index: 9996;
+    width: 100%;
     /*margin-top: 5px;*/
 }
 #logo {
@@ -273,19 +274,24 @@ a:hover {
     /*margin-top: 18%;*/
     float: center;
     position: fixed;
+    width: auto;
+    text-align: center;
+    margin-top: 15%;
+    /*margin-left: -1%;*/
     /*z-index: 9997;*/
 }
-.center-logo {
+/*.center-logo {
     float: center;
     vertical-align: middle;
     text-align: left;
     /*clear: center;*/
     /*margin-left: 10%;*/
-    width: 77%;
+   /* width: 77%;
     display: block;
     margin: auto;
     margin-top: 25rem; /*CHANGE TO PERCENT AT END/LATER*/
 }
+
 .center-column {
     position: fixed;
     left: 50%;
@@ -301,7 +307,7 @@ a:hover {
 }
 #newcontent {
     margin-left: 38%; /*REPOSITION LATER*/
-    margin-top: 18%;
+    margin-top: 25%;
     max-width: 30%;
     text-align: left;
     font-size: 1.25rem; /*2.1rem*/ 
@@ -543,7 +549,7 @@ a:hover {
   #whatweremissing:hover { 
     height: 316px;
     width: 404px;
-    background: url("../images/whatweremissing.gif");
+    background: url("../images/wwm/hover.gif");
     background-repeat: no-repeat;
     margin: auto; /*position the [div] on the center*/
   } 
@@ -559,7 +565,7 @@ a:hover {
   #paintingii:hover { 
     height: 316px;
     width: 404px;
-    background: url("../images/paintingii.gif");
+    background: url("../images/painting2/hover.gif");
     background-repeat: no-repeat;
     margin: auto; /*position the [div] on the center*/
   } 
@@ -574,8 +580,8 @@ a:hover {
   /*this is the hover event trigger*/
   #competitivescholarshipportfolio:hover { 
     height: 316px;
-    width: 404px;
-    background: url("../images/competitivescholarshipportfolio.gif");
+    min-width: 404px;
+    background: url("../images/competitive/hover.gif");
     background-repeat: no-repeat;
     margin: auto; /*position the [div] on the center*/
   } 
@@ -591,7 +597,7 @@ a:hover {
   #twentyfourteen:hover { 
     height: 316px;
     width: 404px;
-    background: url("../images/2014.gif");
+    background: url("../images/drawing/hover.gif");
     background-repeat: no-repeat;
     margin: auto; /*position the [div] on the center*/
   }
