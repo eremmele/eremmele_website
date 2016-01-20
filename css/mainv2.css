@@ -64,7 +64,7 @@
   /* Offsets */
   .container .offset-by-one-third             { padding-left: 33.3333%; }
   .container .offset-by-two-thirds            { padding-left: 33.3333%; }
-  .container .offset-by-seven                 { padding-left: 17.1875%; } 
+  /*.container .offset-by-seven                 { padding-left: 17.1875%; } */
 }
 /* For devices larger than 1214px (as opposed to 1028 and 64em) */
 @media screen and (min-width: 75.875em) {
@@ -168,6 +168,10 @@ nav {
   height: 6rem;
   background-color: #000;
 }
+/*@media screen and (min-width: 35.5em) {}
+@media screen and (min-width: 67.250em) {}
+@media screen and (min-width: 75.875em) {}*/
+
 .float-right { 
   float: right; 
   text-align: right;
@@ -184,6 +188,9 @@ nav {
   float: center; 
   text-align: center;
   clear: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 30%;
 }
 
 /* The element at the top of the page right after the fixed navigation bar
@@ -214,16 +221,16 @@ nav {
   text-decoration: none;
 }
 /*PART OF SKELETON*/
-@media only screen and (max-width: 800px) {
+/*@media only screen and (max-width: 800px) {
   .menu { 
-    position: relative;
+    /*position: relative;
     width: 100%;
   }
   .menu-items {
     display: none; 
     width: 100%;
-    margin-top: 1rem; /* 50px */
-    background-color: #000; /*#008378*/
+    margin-top: 1rem; /* 50px 
+    background-color: #000; /*#008378
   }
   .menu-items li {
     display: block;
@@ -359,10 +366,10 @@ a:hover {
     transition: opacity 1s;
 }
 .content {
-    left: 45%;
+    left: 40%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-    max-width: 30%;
+    max-width: 20%;
 }
 .opac{opacity: 1 !important;}
 .opacity {
@@ -656,6 +663,27 @@ a:hover {
     background-repeat: no-repeat;
     margin: auto; /*position the [div] on the center*/
   }
+
+
+
+
+
+.lines {
+    padding: 0;
+    margin: 0;
+    /*line-height: 5px;
+    color: #fff;
+    height: 5px;*/
+    border-top: .25rem solid #fff;
+    width: auto;
+    transform: rotate(153deg);
+      -moz-transform: rotate (153deg);
+      -webkit-transform: rotate: (153deg);
+      -o-transform: rotate(153deg);
+      -ms-transform; rotate(153deg);
+    z-index: 9997;
+}
+
 
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
