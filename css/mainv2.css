@@ -28,7 +28,7 @@
                                                       box-sizing: border-box; }
 
 /* For devices larger than 568px */
-@media screen and (min-width: 35.5em) {
+@media screen and (min-width: 35.5em) and (max-width: 67.250em) {
   .container {
     width: 50%;
     padding: 0; }
@@ -47,27 +47,8 @@
     padding-bottom: 7em;
   }
 }
-/* For devices larger than 1076 (as opposed to 768px and 48em) */
-@media screen and (min-width: 67.250em) {
-  .container {
-    width: 75%;
-    padding: 0; }
-  /*.container .eight.columns { 
-    width: 48.4375%; } */
-  .row {
-    padding-bottom: 7em;
-  }
-  /*grid*/
-  .container .one-third.column                { width: 48.4375%; }
-  .container .two-thirds.column               { width: 48.4375%; }
- 
-  /* Offsets */
-  .container .offset-by-one-third             { padding-left: 33.3333%; }
-  .container .offset-by-two-thirds            { padding-left: 33.3333%; }
-  /*.container .offset-by-seven                 { padding-left: 17.1875%; } */
-}
-/* For devices larger than 1214px (as opposed to 1028 and 64em) */
-@media screen and (min-width: 75.875em) {
+
+@media screen and (min-width: 67.250em) { /* old 75.875em */
   .container {
     width: 100%; }
   .column,
@@ -89,13 +70,13 @@
         .container .one.columns                     { width: 4.6875%; }
         .container .two.columns                     { width: 10.9375%; }
         .container .three.columns                   { width: 17.1875%; }
-        .container .four.columns                    { width: 23.4375%; }
-        .container .five.columns                    { width: 29.6875%; }
+   */   .container .four.columns                    { width: 23.4375%; }
+   /*   .container .five.columns                    { width: 29.6875%; }
         .container .six.columns                     { width: 35.9375%; }
         .container .seven.columns                   { width: 42.1875%; }
         .container .eight.columns                   { width: 48.4375%; }
-        .container .nine.columns                    { width: 54.6875%; }
-        .container .ten.columns                     { width: 60.9375%; }
+        .container .nine.columns                    { width: 54.6875%; } 
+      */ .container .ten.columns                    { width: 60.9375%; } /*
         .container .eleven.columns                  { width: 67.1875%; }
         .container .twelve.columns                  { width: 73.4375%; }
         .container .thirteen.columns                { width: 79.6875%; }
@@ -108,8 +89,8 @@
  
         /* Offsets */
         .container .offset-by-one-third             { padding-left: 33.3333%; }
-        .container .offset-by-two-thirds            { padding-left: 66.6666%; } /*
-        .container .offset-by-one                   { padding-left: 6.25%; }
+        .container .offset-by-two-thirds            { padding-left: 66.6666%; } 
+        .container .offset-by-one                   { padding-left: 6.25%; } /*
         .container .offset-by-two                   { padding-left: 12.5%; }
         .container .offset-by-three                 { padding-left: 18.75%; }
         .container .offset-by-four                  { padding-left: 25%; }
