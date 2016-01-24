@@ -229,7 +229,7 @@ nav {
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1, h2, h3, h4, h5, h6 {
-  margin-top: 0;
+  /*margin-top: 0;*/
   margin-bottom: 2rem;
   font-weight: 300; }
 h1 { font-size: 1.25rem; /*2.1rem*/ line-height: 1.2;  letter-spacing: .6rem; text-transform: lowercase; }
@@ -284,16 +284,16 @@ a:hover {
     border-style: solid;
     border-width: 1px;
     border-color: #fff;
-    padding: 2.5rem 4rem 2.5rem 4rem; /*4.4rem*/
+    padding: 2.5rem 6rem 2.5rem 6rem; /*4.4rem*/
     text-align: center;
     display: inline-block;
     /*z-index: 9997;*/
 }
 .seework {
     float: center;
-    padding: 2.5rem 2.5rem 2.5rem 2.5rem;
+    /*padding: 2.5rem 2.5rem 2.5rem 2.5rem;*/
     z-index: 9996;
-    width: 100%;
+    /*width: 100%;*/
     /*margin-top: 5px;*/
 }
 #logo {
@@ -302,7 +302,7 @@ a:hover {
     float: center;
     position: fixed;
     width: auto;
-    text-align: center;
+    /*text-align: center;*/
     margin-top: 15%;
     /*margin-left: -1%;*/
     /*z-index: 9997;*/
