@@ -307,13 +307,16 @@ a:hover {
 }
 
 #rotator {
+  width: 5vh;
+}
+/*#rotator {
   background: no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   height: 112.5rem;
-}
+}*/
 
 #gradient {
   width: 100%;
