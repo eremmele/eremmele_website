@@ -306,7 +306,7 @@ a:hover {
     filter: alpha(opacity=0); /* For IE8 and earlier */
 }
 
-#rotator {
+.rotator {
   width: 3vh;
 }
 /*#rotator {
