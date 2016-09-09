@@ -139,19 +139,67 @@ footer {
 
 /* Navigation
 –––––––––––––––––––––––––––––––––––––––––––––––––– */ 
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  /*right: 0;*/
-  z-index: 9999;
-  width: 100%;
-  height: 6rem;
-  background-color: #000;
-}
 /*@media screen and (min-width: 35.5em) {}
 @media screen and (min-width: 67.250em) {}
 @media screen and (min-width: 75.875em) {}*/
+
+/*----------------------------------*/
+
+a {
+    text-decoration:none
+}
+li {
+    list-style:none
+}
+ul {    
+    margin:0;
+    font-size: 1.25rem; /*2.1rem*/ 
+    line-height: 1.2;  
+    letter-spacing: .6rem; 
+    text-transform: lowercase
+}
+.main-nav {
+    width:100vh;    
+    height:45px;
+    position:fixed;
+    background:#4c4c4c;
+    -webkit-transform-origin: left top;
+    -webkit-transform:rotate(-90deg) translateX(-100%);
+}
+ul.nav {    
+    margin:0 auto;
+    height:100%;        
+}
+
+ul.nav li {
+    /*padding-top:124px*/
+    margin-right:4vh; /*20px*/
+    float:right;
+    height:100%;
+    line-height:45px;
+}
+ul.nav li a {           
+    color:#fff;    
+}
+
+.main-nav a, .main-nav a:visited {
+  color: #ffffff; 
+}  
+.main-nav a:hover, .main-nav a:target {
+  color: #cbcbcb; /*ebebeb*/
+}
+/*----------------------------------*/
+
+.sidebar {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  width: 33%;
+  padding: 2em;
+  background-color: #f8ca00;
+}
+
 
 .float-right { 
   float: right; 
@@ -174,99 +222,21 @@ nav {
   max-width: 30%;
 }
 
-/* The element at the top of the page right after the fixed navigation bar
-   MUST have sufficient top margin or else it will be covered by the bar */
-
-/*.fixed-nav-bar li, .fixed-nav-bar a { 
-  height: 6.1rem;
-  /*line-height: 50px;
-}*/
-.menu {
-  width: 100%;
-  max-width: inherit;
-  margin-top: -1rem;
-  /*margin: 1rem auto;*/
-}
-.menu a, .menu a:visited {
-  color: #ffffff;
-}
-.menu a:hover, .menu a:target {
-  color: #cbcbcb; /*ebebeb*/
-}
-.menu-items li {
-  display: inline-block;
-  /*margin-right: 10px;
-  margin-left: 10px;*/
-}
-.menu-items a {
-  text-decoration: none;
-}
-/*PART OF SKELETON*/
-/*@media only screen and (max-width: 800px) {
-  .menu { 
-    /*position: relative;
-    width: 100%;
-  }
-  .menu-items {
-    display: none; 
-    width: 100%;
-    margin-top: 1rem; /* 50px 
-    background-color: #000; /*#008378
-  }
-  .menu-items li {
-    display: block;
-    text-align: center;
-  }
-  #menu:target .show {
-    display: none;
-  }
-  #menu:target .hide, #menu:target .menu-items {
-    display: inline-block;
-  }
-}*/
-
-
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1, h2, h3, h4, h5, h6 {
   /*margin-top: 0;*/
-  margin-bottom: 2rem;
+  /*margin-bottom: 2rem;*/
   font-weight: 300; }
-h1 { font-size: 1.25rem; /*2.1rem*/ line-height: 1.2;  letter-spacing: .6rem; text-transform: lowercase; }
-/*h2 { font-size: 3.6rem; line-height: 1.25; letter-spacing: -.1rem; }
-h3 { font-size: 3.0rem; line-height: 1.3;  letter-spacing: -.1rem; }
-h4 { font-size: 2.4rem; line-height: 1.35; letter-spacing: -.08rem; }
-h5 { font-size: 1.8rem; line-height: 1.5;  letter-spacing: -.05rem; }
-h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }*''
+h1 { font-size: 1.25rem; /*2.1rem*/ line-height: 1.2;  letter-spacing: .6rem; text-transform: lowercase; 
+  }
 
 /* Larger than phablet */
-@media (min-width: 550px) {
-  h1 { font-size: 1.25rem;
-}
-  /*h2 { font-size: 4.2rem; }
-  h3 { font-size: 3.6rem; }
-  h4 { font-size: 3.0rem; }
-  h5 { font-size: 2.4rem; }
-  h6 { font-size: 1.5rem; }*/
-}*/
 
 footer p, p {
   font-size: 1.5rem;
   opacity: .5;
 }
-.description p {
-  font-size: 1.2rem;
-  line-height: 1.5;
-  letter-spacing: .1rem;
-  opacity: .5;
-}
-/*p {
-  margin-top: 0; 
-  font-size: 1.25rem;
-  line-height: 1.5;
-  letter-spacing: .1rem;
-  font-weight: 300;
-}*/
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -280,22 +250,6 @@ a:hover {
 
 /* Box Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.box {
-    border-style: solid;
-    border-width: 1px;
-    border-color: #fff;
-    padding: 2.5rem 6rem 2.5rem 6rem; /*4.4rem*/
-    text-align: center;
-    display: inline-block;
-    /*z-index: 9997;*/
-}
-.seework {
-    float: center;
-    /*padding: 2.5rem 2.5rem 2.5rem 2.5rem;*/
-    z-index: 9996;
-    /*width: 100%;*/
-    /*margin-top: 5px;*/
-}
 #logo {
     /*margin-left: 45%; /*REPOSITION LATER*/
     /*margin-top: 18%;*/
@@ -307,16 +261,10 @@ a:hover {
     /*margin-left: -1%;*/
     /*z-index: 9997;*/
 }
-/*.center-logo {
-    float: center;
-    vertical-align: middle;
-    text-align: left;
-    /*clear: center;*/
-    /*margin-left: 10%;*/
-   /* width: 77%;
-    display: block;
-    margin: auto;
-    margin-top: 25rem; /*CHANGE TO PERCENT AT END/LATER*/
+.logo {
+    width: 1.25rem; /*2.1rem*/
+    float: left;
+    display: inline-block;
 }
 
 .center-column {
@@ -367,15 +315,6 @@ a:hover {
   height: 112.5rem;
 }
 
-/* #rotator {  /* PHP ONLY - CANT USE ON GITHUB
-  background-image: url(/rotator/rotator.php);
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-top: 0px;
-  width: auto;
-  height: 1000px; /*1127.387px;
-  z-index: 1;*/
-}
 #gradient {
   width: 100%;
   height: 1127.387px;
@@ -385,106 +324,8 @@ a:hover {
   position: fixed;
   z-index: 2;
 }
-/*#gradient {
-    width: 100%;
-    height: 1127.387px;
-    margin-top: 0;
-    left: 0;
-    -webkit-transition: background .3s;
-    -moz-transition: background .3s;
-    -ms-transition: background .3s;
-    -o-transition: background .3s;
-    transition: background .3s;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff0077+0,7db9e8+100 
-    background: #ff0077; /* Old browsers 
-    background: -moz-linear-gradient(top,  #ff0077 0%, #7db9e8 100%); /* FF3.6-15 
-    background: -webkit-linear-gradient(top,  #ff0077 0%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 
-    background: linear-gradient(to bottom,  #ff0077 0%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ 
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0077', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 
-    opacity: .3;
-    z-index: 2;
-    position: fixed;
-}*/
 
-#two{
-    width: inherit;
-    height: auto;
-    padding-bottom: 8%;
-    top: 40%;
-    position: relative;
-    background: #000;
-    z-index: 2;
-}
-.fixed {
-    position: fixed;
-}
-/*.covers-position {
-  width: 28.05%;
-  margin-left: 3.96%;
-  float: left;
-  position: relative;
-} */
-/*.covers-left {
-}
-.covers-right {
-  float: right;
-  clear: right;
-  margin-left: 67.98%;
-}
-.covers-center {
-  margin-left: 35.97%;
-  clear: center;
-}*/
-.title-bottom {
-  margin-left: 8%;
-  margin-top: 28rem;
-  /*margin-left: 20%;
-  margin-top: 62.5%;*/
-  position: absolute;
-}
-/*.title-left {
-  float: left;
-  clear: left;
-  margin-left: -38%;
-  margin-top: 32.5%;
-  left: 50%;
-  transform: translate(-50%, 0);
-  position: absolute;
-}
-.title-right {
-  float: right;
-  clear: right;
-  margin-left: 11%;
-  margin-top: 32.5%;
-  position: absolute;
-}
-.projectColumn {
-  float: left;
-  z-index: 1;
-  display: inline-block;
-  width: 60%;
-  margin-top: 7rem;
-}*/
 
-.projectPhotos {
-  width: 100%;
-  margin-left: 4.96%;
-  padding-bottom: 2rem;
-}
-
-.description {
-  position: fixed;
-  float: right;
-  text-align: left;
-  z-index: 9998;
-  display: inline-block;
-  max-width: 33%;
-  margin-top: -1rem;
-}
-.description p {
-  opacity: .5;
-}
-  
 
 /* Project Covers
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -502,168 +343,6 @@ a:hover {
     background-repeat: no-repeat;
     margin: auto; /*position the [div] on the center*/
   }
-
-  #blackholes2 {
-    height: 316px;
-    width: 404px;
-    background: url("../images/blackholes2-replace.jpg");
-    margin: auto; /*position the [div] on the center*/
-  }
-  /*this is the hover event trigger*/
-  #blackholes2:hover { 
-    height: 316px;
-    width: 404px;
-    background: url("../images/blackholes2.gif");
-    background-repeat: no-repeat;
-    margin: auto; /*position the [div] on the center*/
-  }
-
-  #quoted {
-    height: 316px;
-    width: 404px;
-    background: url("../images/quoted-replace.jpg");
-    margin: auto; /*position the [div] on the center*/
-  }
-  /*this is the hover event trigger*/
-  #quoted:hover { 
-    height: 316px;
-    width: 404px;
-    background: url("../images/quoted.gif");
-    background-repeat: no-repeat;
-    margin: auto; /*position the [div] on the center*/
-  }
-
-  #feelfeelfeelfest {
-    height: 316px;
-    width: 404px;
-    background: url("../images/feelfeelfeelfest-replace.jpg");
-    background-repeat: no-repeat;
-    margin: auto; /*position the [div] on the center*/
-  }
-  /*this is the hover event trigger*/
-  #feelfeelfeelfest:hover { 
-    height: 316px;
-    width: 404px;
-    background: url("../images/feelfeelfeelfest.gif");
-    background-repeat: no-repeat;
-    margin: auto; /*position the [div] on the center*/
-  }
-
-  #list {
-    height: 316px;
-    width: 404px;
-    background: url("../images/list-replace.png");
-    background-repeat: no-repeat;
-    margin: auto; /*position the [div] on the center*/
-  }
-  /*this is the hover event trigger*/
-  #list:hover { 
-    height: 316px;
-    width: 404px;
-    background: url("../images/list.gif");
-    background-repeat: no-repeat;
-    margin: auto; /*position the [div] on the center*/
-  }
-
-  #list {
-    height: 316px;
-    width: 404px;
-    background: url("../images/list-replace.png");
-    background-repeat: no-repeat;
-    margin: auto; /*position the [div] on the center*/
-  }
-  /*this is the hover event trigger*/
-  #list:hover { 
-    height: 316px;
-    width: 404px;
-    background: url("../images/list.gif");
-    background-repeat: no-repeat;
-    margin: auto; /*position the [div] on the center*/
-  }
-
-  #whatweremissing {
-    height: 316px;
-    width: 404px;
-    background: url("../images/whatweremissing-replace.jpg");
-    background-repeat: no-repeat;
-    margin: auto; /*position the [div] on the center*/
-  }
-  /*this is the hover event trigger*/
-  #whatweremissing:hover { 
-    height: 316px;
-    width: 404px;
-    background: url("../images/wwm/hover.gif");
-    background-repeat: no-repeat;
-    margin: auto; /*position the [div] on the center*/
-  } 
-
-  #paintingii {
-    height: 316px;
-    width: 404px;
-    background: url("../images/paintingii-replace.jpg");
-    background-repeat: no-repeat;
-    margin: auto; /*position the [div] on the center*/
-  }
-  /*this is the hover event trigger*/
-  #paintingii:hover { 
-    height: 316px;
-    width: 404px;
-    background: url("../images/painting2/hover.gif");
-    background-repeat: no-repeat;
-    margin: auto; /*position the [div] on the center*/
-  } 
-
-  #competitivescholarshipportfolio {
-    height: 316px;
-    width: 404px;
-    background: url("../images/competitivescholarshipportfolio-replace.jpg");
-    background-repeat: no-repeat;
-    margin: auto; /*position the [div] on the center*/
-  }
-  /*this is the hover event trigger*/
-  #competitivescholarshipportfolio:hover { 
-    height: 316px;
-    min-width: 404px;
-    background: url("../images/competitive/hover.gif");
-    background-repeat: no-repeat;
-    margin: auto; /*position the [div] on the center*/
-  } 
-
-  #twentyfourteen {
-    height: 316px;
-    width: 404px;
-    background: url("../images/2014-replace.jpg");
-    background-repeat: no-repeat;
-    margin: auto; /*position the [div] on the center*/
-  }
-  /*this is the hover event trigger*/
-  #twentyfourteen:hover { 
-    height: 316px;
-    width: 404px;
-    background: url("../images/drawing/hover.gif");
-    background-repeat: no-repeat;
-    margin: auto; /*position the [div] on the center*/
-  }
-
-
-
-
-
-.lines {
-    padding: 0;
-    margin: 0;
-    /*line-height: 5px;
-    color: #fff;
-    height: 5px;*/
-    border-top: .25rem solid #fff;
-    width: auto;
-    transform: rotate(153deg);
-      -moz-transform: rotate (153deg);
-      -webkit-transform: rotate: (153deg);
-      -o-transform: rotate(153deg);
-      -ms-transform; rotate(153deg);
-    z-index: 9997;
-}
 
 
 /* Buttons
@@ -686,7 +365,9 @@ ol ul {
   margin: 1.5rem 0 1.5rem 3rem;
   font-size: 90%; }
 li {
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem; 
+  display: inline;
+}
 
 
 /* Code
