@@ -1,0 +1,105 @@
+.clear {clear:both;}
+
+div#content {
+  margin:35px;
+}
+
+div#up-left {
+  position:absolute;
+  left:16%;
+  z-index:4;
+}
+  
+div#down-right {
+  /*right:6%;*/
+  left: 76%;
+  position:fixed;
+  bottom:0px;
+  z-index:5;
+}
+
+div#down-left {
+  left:46%;
+  position:fixed;
+  bottom:0px;
+  z-index:3;
+}
+
+/*div#right {
+  height:auto;
+  width:9400px;
+  position:fixed;
+  top:7%;
+  right:0px;
+  z-index:2;
+}*/
+
+.padding {
+  padding: 20% 0 20% 0; /*30%*/
+}
+.padding-3 {
+  padding: 20% 0 30% 0; /*30%*/
+}
+
+
+/* image zooming-- matches js on index 
+
+    .zoom {
+      display:inline-block;
+      position: relative;
+    }
+    .zoom img {
+      display: block;
+    }
+
+/* temporary */
+.zoom:hover img {
+  transform: scale(2.4);
+  transition: transform 0.5s ease-in-out;
+}
+
+.zoom {
+  width: 400px;
+  overflow: hidden;
+}
+
+/* Resources
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#research {
+  clear: all;
+  color: #fff;
+  position:relative;
+  cursor: pointer;
+}
+#about:link{
+  text-decoration:underline;
+  position:relative;
+}
+#about:hover{
+  position:relative;
+  opacity: .5;
+}
+
+#about-div {
+  display: inline-block;
+}
+#about {
+  /*outline: solid rgba(0,0,0,1) 15px;*/
+  border: solid black 15px;
+  /*margin-top: 15px;*/
+  margin-left: -15px;
+  width: 500px;
+  font-size: 1.2rem; 
+  line-height: auto;  
+  letter-spacing: 0;
+  opacity: 1;
+  background: #000;
+  list-style-type: none;
+  position: absolute;
+  display: none;
+  -webkit-transform-origin: left top;
+  -webkit-transform:rotate(0deg) translateX(0%); 
+}
+#about-div:hover #about {
+  display: block;
+}
