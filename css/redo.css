@@ -1,28 +1,46 @@
 .clear {clear:both;}
 
-div#content {
-  margin:35px;
+.scoot-over {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row;
+   flex-direction: row;
+   -webkit-justify-content: flex-end;
+   justify-content: flex-end;
 }
 
+div#content {
+  width: 100vw;
+}
+
+/*FIRST*/
 div#up-left {
   position:absolute;
-  left:16%;
+  left:32.5%;  /*16%*/
   z-index:4;
+  width: 65%;
 }
   
+/* THIRD*/
 div#down-right {
-  /*right:6%;*/
-  left: 76%;
+  clear: all;
+  right:0;
+  left:87.5%;   /*67%*/
   position:fixed;
   bottom:0px;
   z-index:5;
+  width: 62%;
+  margin-right: 0;
+  padding-right: 0;
 }
 
+/*SECOND*/
 div#down-left {
-  left:46%;
+  left:60%;   /*46%*/
   position:fixed;
   bottom:0px;
   z-index:3;
+  width: 65%;
 }
 
 /*div#right {
@@ -35,10 +53,15 @@ div#down-left {
 }*/
 
 .padding {
-  padding: 20% 0 20% 0; /*30%*/
+  padding: 34% 0 34% 0; /*30% or 20*/
 }
+
 .padding-3 {
-  padding: 20% 0 30% 0; /*30%*/
+  padding: 50% 0 60% 0; /*20% 0 30% 0*/
+}
+
+.padding-2 {
+  padding: 46% 0 46% 0; /*20% 0 30% 0*/
 }
 
 
@@ -54,12 +77,12 @@ div#down-left {
 
 /* temporary */
 .zoom:hover img {
-  transform: scale(2.4);
+  transform: scale(2); /*2*/
   transition: transform 0.5s ease-in-out;
 }
 
 .zoom {
-  width: 400px;
+  width: auto;
   overflow: hidden;
 }
 
@@ -103,3 +126,94 @@ div#down-left {
 #about-div:hover #about {
   display: block;
 }
+
+img {max-width:100%}
+
+.400 {
+  width: auto; /* 400 / 1440 */
+  height: auto;
+  /*height: 267px;*/
+}
+
+.200 {
+  width: auto;
+  height: auto;
+}
+
+
+
+/* Thumbnails
+–––––––––––––––––––––––––––––––––––––––––––––––––– 
+.1-1 {
+  background-image: url('../images/eye/remmele_EyeSeries.jpg');
+  display: inline-block;
+  background-repeat:no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 400;
+  height: 267;
+  }
+.1-2 {
+  background-image: url('../images/biennial/remmele_tickets.jpg');
+    display: block;
+  background-repeat:no-repeat;
+  background-size: 100% 100%;
+  }
+.1-3 {
+  background-image: url('../images/biennial/remmele_BiennialPoster.jpg');
+  }
+.1-1-4 {
+  background-image: url('../images/wwm/eremmele_wwm1.jpg');
+  }
+.1-5 {
+  background-image: url('../images/monsoon/remmele_monsoon4.jpg');
+  }
+.1-6 {
+  background-image: url('../images/biennial/remmele_BiennialTix-orange.jpg');
+  }
+.1-7 {
+  background-image: url('../images/blackholes/eremmele3.jpg');
+  }
+
+
+.2-1 {
+  background-image: url('../images/feelfeelfeelfest/remmele_FeelFeelFeelFest.jpg');
+}
+.2-2 {
+  background-image: url('../images/milk-and-water/remmele_milk-and-water-screenshot.PNG');
+}
+.2-3 {
+  background-image: url('../images/feelfeelfeelfest/remmele_FeelFeelFeelFest_bus.jpg');
+}
+.2-4 {
+  background-image: url('../images/milk-and-water/remmele_milk-and-water.gif');
+}
+.2-5 {
+  background-image: url('../images/biennial/remmele_BiennialWeb.jpg');
+}
+.2-6 {
+  background-image: url('../images/blackholes/eremmele1v2.jpg');
+}
+
+
+.3-1 {
+  background-image: url('../images/blackholes/eremmele3.jpg');
+}
+.3-2 {
+  background-image: url('../images/quoted/remmele_cards2v2.jpg');
+}
+.3-3 {
+  background-image: url('../images/biennial/remmele_BiennialLogoWhite.gif');
+}
+
+.3-4 {
+  background-image: url('../images/coming-soon/comingsoon_screenshot.png');
+}
+
+.3-5 {
+  background-image: url('../images/halfacat/remmele_HalfaCat.jpg');
+}
+.3-6 {
+  background-image: url('../images/blackholes/eremmele5.jpg');
+}
+*/

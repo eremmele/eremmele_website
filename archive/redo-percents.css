@@ -1,0 +1,146 @@
+/* Changing PX to % -- based on a /1440 scale found at http://responsv.com/flexible-math/
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.clear {clear:both;}
+
+div#content {
+  margin: 2.5%; /* 36 / 1440 */
+}
+
+div#up-left {
+  position:absolute;
+  left:16%;
+  z-index:4;
+}
+  
+div#down-right {
+  /*right:6%;*/
+  left: 76%;
+  position:fixed;
+  bottom:0px;
+  z-index:5;
+}
+
+div#down-left {
+  left:46%;
+  position:fixed;
+  bottom:0px;
+  z-index:3;
+}
+
+/*div#right {
+  height:auto;
+  width:9400px;
+  position:fixed;
+  top:7%;
+  right:0px;
+  z-index:2;
+}*/
+
+.padding {
+  padding: 20% 0 20% 0; /*30%*/
+}
+.padding-3 {
+  padding: 20% 0 30% 0; /*30%*/
+}
+
+
+/* image zooming-- matches js on index 
+
+    .zoom {
+      display:inline-block;
+      position: relative;
+    }
+    .zoom img {
+      display: block;
+    }
+
+/* temporary */
+.zoom:hover img {
+  transform: scale(2.4);
+  transition: transform 0.5s ease-in-out;
+}
+
+.zoom {
+  width: 400px; /* 400 / 1440 */
+  overflow: hidden;
+}
+
+.400x267 {
+  max-width: .278vw; /*27.77777777777778%; /* 400 / 1440 */; /* width="400" height="267" */
+  height: 18.541666666666667%; /* 267 / 1440 */;
+  min-width: ;
+}
+
+.400 {
+  max-width: .278vw; /*27.77777777777778%; /* 400 / 1440 */; /* width="400" */
+  height: auto;
+}
+
+.biennialTix {
+  max-width: .278vw; /*27.77777777777778%; /* 400 / 1440 *; */
+  margin-bottom: 24.305555555555555%; /* 350 / 1440 */
+  height: auto;
+}
+
+.200 {
+  max-width: 13.88888888888889%; /* 200 / 1440 */ /*width="200"*/
+  height: auto;
+}
+
+.645 {
+  max-width: 44.79166666666667%; /* 645 / 1440 */;
+  height: auto;
+  margin-bottom: 0;
+}
+.645x450 {
+  margin-bottom: 31.25%; /* 450 / 1440 */
+  max-width: 44.79166666666667%; /* 645 / 1440 */
+  height: auto;
+}
+
+/* Resources
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#research {
+  clear: all;
+  color: #fff;
+  position:relative;
+  cursor: pointer;
+}
+#about:link{
+  text-decoration:underline;
+  position:relative;
+}
+#about:hover{
+  position:relative;
+  opacity: .5;
+}
+
+#about-div {
+  display: inline-block;
+}
+#about {
+  /*outline: solid rgba(0,0,0,1) 15px;*/
+  border: solid black 15px;
+  /*margin-top: 15px;*/
+  margin-left: 1.0416666666666666%; /*15*/
+  width: 34.72222222222222%; /* 500 / 1440 */
+  font-size: 12px;  /*1.2rem*/
+  line-height: auto;  
+  letter-spacing: 0;
+  opacity: 1;
+  background: #000;
+  list-style-type: none;
+  position: absolute;
+  display: none;
+  -webkit-transform-origin: left top;
+  -webkit-transform:rotate(0deg) translateX(0%); 
+}
+#about-div:hover #about {
+  display: block;
+}
+
+
+
+
+
