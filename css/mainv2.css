@@ -43,14 +43,16 @@ li {
 }
 
 /* Desktop */
-@media screen and (min-width: 750px) and (min-height: 720px) {
+@media screen and (min-width: 750px) {
+}
 
 ul {    
     margin:0;
     font-size: 1.25rem; /*2.1rem*/ 
     line-height: 1.2;  
     letter-spacing: .6rem; 
-    text-transform: lowercase; }
+    text-transform: lowercase; 
+  }
 
 .main-nav {
     width:100vh;    
@@ -60,57 +62,27 @@ ul {
     background:; /*4c4c4c*/
     -webkit-transform-origin: left top;
     -webkit-transform:rotate(-90deg) translateX(-95%); 
-    vertical-align: middle;
+    /*vertical-align: middle;*/ /*need to re-fix this perfect middle thing*/
     /*top: 50%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%) */
-    padding-right: 2.25vh;}
+    /*padding-right: 2.25vh;*/
+    top: 12%;
+  }
 
 ul.nav li {
     /*padding-top:124px*/
     margin-right:5.25vh; /*20px*/
     float:right;
     height:100%;
-    line-height:45px; }
+    /*line-height:45px;*/ 
+  }
 
-
-}
 /* ---------------------------------------- */
 
-/* Tablet 
+/* Tablet */ 
 @media screen and (min-height: 0px) and (max-height: 720px) {
-
-ul {    
-    margin:0;
-    font-size: 1.25rem;
-    letter-spacing: .3rem; 
-    text-transform: lowercase; }
-
-.main-nav-m {
-    width:100vw;    
-    height:45px;
-    position:fixed;
-    z-index:9999;
-    -webkit-transform-origin: left top;
-    -webkit-transform:rotate(0deg) translateX(0%); } 
-
-ul.nav li {
-    margin-right:5%;
-    float:left;
-    height:100%; }
-
-.desktop {
-  display: none;
-}
-.tablet {
-  display: block; }
-}
-.mobile {
-  display: none; }
-} 
-
-*/
 
 
 }
@@ -118,38 +90,7 @@ ul.nav li {
 
 /* Mobile */
 @media screen and (min-width: 400px) and (max-width: 550px) {
-  ul {    
-    margin:0 2vw 0 0;
-    font-size: 1.25rem;
-    letter-spacing: .3rem; 
-    text-transform: lowercase;
-    display: inline-block; }
 
-.main-nav-m {
-    width:50vw;    
-    height:45px;
-    position:fixed;
-    z-index:9999;
-    -webkit-transform-origin: left top;
-    -webkit-transform:rotate(0deg) translateX(0%);
-    display: inline-block; } 
-
-ul.nav li {
-    margin-right:5%;
-    float:left;
-    height:100%;
-    line-height: 0;
-    display: inline-block; }
-
-.desktop {
-  display: none;
-}
-.tablet {
-  display: none; }
-}
-.mobile {
-  display: inline-block; }
-}
 
 
 }
@@ -292,7 +233,6 @@ there.
 @media screen and (min-width: 1440px) and (max-width: 1440px) {
 .desktop {
   display: block;
-  max-width: 90vw;
 }
 .tablet {
   display: none; }
