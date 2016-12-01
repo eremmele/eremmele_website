@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400);
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
 
 /* Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -68,7 +68,7 @@ ul {
     margin-right: -50%;
     transform: translate(-50%, -50%) */
     /*padding-right: 2.25vh;*/
-    top: 12%;
+    top: 17.5%;
   }
 
 ul.nav li {
