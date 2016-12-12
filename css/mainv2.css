@@ -35,6 +35,8 @@ html, body {
 
 /*----------------------------------*/
 
+
+
 a {
     text-decoration:none
 }
@@ -50,7 +52,7 @@ ul {
     margin:0;
     font-size: 1.25rem; /*2.1rem*/ 
     line-height: 1.2;  
-    letter-spacing: .6rem; 
+    letter-spacing: .1rem;
     text-transform: lowercase; 
   }
 
@@ -61,7 +63,7 @@ ul {
     z-index:9999;
     background:; /*4c4c4c*/
     -webkit-transform-origin: left top;
-    -webkit-transform:rotate(-90deg) translateX(-95%); 
+    -webkit-transform:rotate(-90deg) translateX(-85%); /*95*/
     /*vertical-align: middle;*/ /*need to re-fix this perfect middle thing*/
     /*top: 50%;
     left: 50%;
@@ -73,7 +75,7 @@ ul {
 
 ul.nav li {
     /*padding-top:124px*/
-    margin-right:5.25vh; /*20px*/
+    margin-right: 10vh;/*5.25vh (most recent); /*20px*/
     float:right;
     height:100%;
     /*line-height:45px;*/ 
