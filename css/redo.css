@@ -16,7 +16,7 @@ div#content {
 /*FIRST*/
 div#up-left {
   position:absolute;
-  left:32.5%;  /*16%*/
+  left:0; /*32.5%*/ /*16%*/
   z-index:4;
   width: 65%;
 }
@@ -25,7 +25,7 @@ div#up-left {
 div#down-right {
   clear: all;
   right:0;
-  left:87.5%;   /*67%*/
+  left:84.5%;  /*87.5%*/ /*67%*/
   position:fixed;
   bottom:0px;
   z-index:5;
@@ -36,7 +36,7 @@ div#down-right {
 
 /*SECOND*/
 div#down-left {
-  left:60%;   /*46%*/
+  left:42.5%;  /*60%*/ /*46%*/
   position:fixed;
   bottom:0px;
   z-index:3;
@@ -53,15 +53,15 @@ div#down-left {
 }*/
 
 .padding {
-  padding: 34% 0 34% 0; /*30% or 20*/
+  padding: 24% 0 24% 0;/*34% 0 34% 0;*/ /*30% or 20*/
 }
 
 .padding-3 {
-  padding: 50% 0 60% 0; /*20% 0 30% 0*/
+  padding: 50% 0 60% 0;/*50% 0 60% 0; /*20% 0 30% 0*/
 }
 
 .padding-2 {
-  padding: 46% 0 46% 0; /*20% 0 30% 0*/
+  padding: 36% 0 36% 0;/*46% 0 46% 0; /*20% 0 30% 0*/
 }
 
 
