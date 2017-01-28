@@ -61,7 +61,7 @@ div#down-left {
 }
 
 .padding-2 {
-  padding: 36% 0 36% 0;/*46% 0 46% 0; /*20% 0 30% 0*/
+  padding: 40% 0 40% 0; /*36% 0 36% 0;*/     /*46% 0 46% 0; /*20% 0 30% 0*/
 }
 
 
@@ -150,4 +150,13 @@ img {max-width: 100%}
 #process-div:hover #process {
   display: inline-block;
   /*padding: 0 0 0 0;*/
+}
+
+.handout {
+  background: url('../images/overthere.space/eremmele_6%handout_s.jpg') 50% center no-repeat;
+  background-size: 100%;
+}
+.handout:hover {
+  background: url('../images/overthere.space/eremmele_6%handout2_s.jpg') 50% center no-repeat;
+  background-size: 100%;
 }
