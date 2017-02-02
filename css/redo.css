@@ -153,10 +153,10 @@ img {max-width: 100%}
 }
 
 .handout {
-  background: url('../images/overthere.space/eremmele_6%handout_s.jpg') 50% center no-repeat;
+  background: url('../images/overthere.space/eremmele_6handout_s.jpg') 50% center no-repeat;
   background-size: 100%;
 }
 .handout:hover {
-  background: url('../images/overthere.space/eremmele_6%handout2_s.jpg') 50% center no-repeat;
+  background: url('../images/overthere.space/eremmele_6handout2_s.jpg') 50% center no-repeat;
   background-size: 100%;
 }
