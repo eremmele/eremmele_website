@@ -160,3 +160,25 @@ img {max-width: 100%}
   background: url('../images/overthere.space/eremmele_6handout2_s.jpg') 50% center no-repeat;
   background-size: 100%;
 }
+
+
+
+
+
+
+/* Paste this css to your style sheet file or under head tag */
+/* This only works with JavaScript, 
+if it's not present, don't show loader */
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url('../images/pacman.gif') center no-repeat #fff;
+}
+/*http://smallenvelop.com/demo/simple-pre-loader/images/loader-64x/Preloader_2.gif*/
+
