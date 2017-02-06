@@ -178,7 +178,16 @@ if it's not present, don't show loader */
   width: 100%;
   height: 100%;
   z-index: 9999;
-  background: url('../images/pacman.gif') center no-repeat #fff;
+  background: url('../images/bat-signal.gif') center no-repeat #fff;
 }
 /*http://smallenvelop.com/demo/simple-pre-loader/images/loader-64x/Preloader_2.gif*/
+
+
+
+
+
+
+
+
+
 
