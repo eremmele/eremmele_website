@@ -11,7 +11,8 @@ are based on 10px sizing. So basically 1.5rem = 15px :) */
 html, body {
   font-size: 62.5%; 
   background-color: #000;
-  color: #fff  width: 100%;
+  color: #fff;
+  width: 100%;
   height: 100%;
   /*font-size: 1rem; /* currently ems cause chrome bug misinterpreting rems on body element */
   /*line-height: 1.5;*/
