@@ -168,7 +168,7 @@ img {max-width: 100%}
 
 /* Paste this css to your style sheet file or under head tag */
 /* This only works with JavaScript, 
-if it's not present, don't show loader */
+if it's not present, don't show loader 
 .no-js #loader { display: none;  }
 .js #loader { display: block; position: absolute; left: 100px; top: 0; }
 .se-pre-con {
@@ -185,6 +185,279 @@ if it's not present, don't show loader */
 
 
 
+#loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+}
+#loader {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #3498db;
+
+    -webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+    animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+
+    z-index: 10001;
+}
+
+    @-webkit-keyframes spin {
+        0%   { 
+            -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: rotate(0deg);  /* IE 9 */
+            transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+        }
+        100% {
+            -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: rotate(360deg);  /* IE 9 */
+            transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+        }
+    }
+    @keyframes spin {
+        0%   { 
+            -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: rotate(0deg);  /* IE 9 */
+            transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+        }
+        100% {
+            -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: rotate(360deg);  /* IE 9 */
+            transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+        }
+    }
+
+    #loader-wrapper .loader-section {
+        position: fixed;
+        top: 0;
+        width: 51%;
+        height: 100%;
+        background: #000;
+        z-index: 10000;
+        -webkit-transform: translateX(0);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: translateX(0);  /* IE 9 */
+        transform: translateX(0);  /* Firefox 16+, IE 10+, Opera */
+    }
+
+    #loader-wrapper .loader-section.section-left {
+        left: 0;
+    }
+
+    #loader-wrapper .loader-section.section-right {
+        right: 0;
+    }
+
+    /* Loaded */
+    .loaded #loader-wrapper .loader-section.section-left {
+        -webkit-transform: translateX(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: translateX(-100%);  /* IE 9 */
+                transform: translateX(-100%);  /* Firefox 16+, IE 10+, Opera */
+
+        -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  
+                transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    }
+
+    .loaded #loader-wrapper .loader-section.section-right {
+        -webkit-transform: translateX(100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: translateX(100%);  /* IE 9 */
+                transform: translateX(100%);  /* Firefox 16+, IE 10+, Opera */
+
+-webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  
+        transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    }
+    
+    .loaded #loader {
+        opacity: 0;
+        -webkit-transition: all 0.3s ease-out;  
+                transition: all 0.3s ease-out;
+    }
+    .loaded #loader-wrapper {
+        visibility: hidden;
+
+        -webkit-transform: translateY(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: translateY(-100%);  /* IE 9 */
+                transform: translateY(-100%);  /* Firefox 16+, IE 10+, Opera */
+
+        -webkit-transition: all 0.3s 1s ease-out;  
+                transition: all 0.3s 1s ease-out;
+    }
+    
+
+
+    /* JavaScript Turned Off */
+    .no-js #loader-wrapper {
+        display: none;
+    }
+    .no-js h1 {
+        color: #000;
+    }
+
+    /*#no-js-content {
+        margin: 0 auto;
+        padding-bottom: 50px;
+        width: 80%;
+        max-width: 978px;
+    }  */
+
+
+
+.inner-y {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -87px 0px 0px -160px;
+  width: 320px;
+  height: 174px;
+  background-color: #000;
+  border-radius: 195px / 106px;
+  overflow:hidden;
+}
+
+.inner-b {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -75px 0px 0px -148px;
+  width: 296px;
+  height: 150px;
+  background-color: #fff;
+  border-radius: 205px / 106px;
+}
+
+.cut-lr, .cut-rr {
+  position: absolute;
+  width: 54px;
+  height: 54px;
+  border-radius: 500px;
+  background-color: #000;
+  top: 32px;
+  margin: -27px 0px 0px -27px;
+}
+
+.cut-bll, .cut-brr {
+  position: absolute;
+  width: 78px;
+  height: 44px;
+  border-radius: 205px / 106px;
+  background-color: #000;
+  bottom:-2px;
+}
+
+.cut-lr {
+  left:102px;
+}
+
+.cut-rr {
+  left:192px;
+}
+
+.cut-bll {
+  -webkit-transform:rotate(45deg);
+  -moz-transform:rotate(45deg);
+  -ms-transform:rotate(45deg);
+  -o-transform:rotate(45deg);
+  transform:rotate(45deg);
+  left:42px;
+}
+
+.cut-brr {
+  -webkit-transform:rotate(-45deg);
+  -moz-transform:rotate(-45deg);
+  -ms-transform:rotate(-45deg);
+  -o-transform:rotate(-45deg);
+  transform:rotate(-45deg);
+  right:42px;
+}
+
+.cut-blll, .cut-bllr, .cut-brll, .cut-brlr {
+  position: absolute;
+  width: 70px;
+  height: 32px;
+  border-radius: 205px / 106px;
+  background-color: #000;
+  bottom: 1px;
+}
+
+.cut-blll, .cut-brll {
+  -webkit-transform:rotate(-112deg);
+  -moz-transform:rotate(-112deg);
+  -ms-transform:rotate(-112deg);
+  -o-transform:rotate(-112deg);
+  transform:rotate(-112deg);
+}
+
+.cut-blll {
+  right:72px;
+}
+
+.cut-brll {
+  left:93px;
+}
+
+.cut-brlr {
+  left:72px;
+}
+
+.cut-bllr {
+  right:93px;
+}
+
+.cut-brlr, .cut-bllr {
+  -webkit-transform:rotate(-67deg);
+  -moz-transform:rotate(-67deg);
+  -ms-transform:rotate(-67deg);
+  -o-transform:rotate(-67deg);
+  transform:rotate(-67deg);
+}
+
+.cut-hd {
+  width: 110px;
+  height: 34px;
+  background: #000;
+  left: 92px;
+  top:-2px;
+  position: absolute;
+}
+
+.drw-hd-m {
+  position: absolute;
+  width: 36px;
+  height: 56px;
+  background-color: #fff;
+  left: 50%;
+  margin-left: -19px;
+  border-radius: 230px / 110px;
+  top: 23px;
+}
+
+.drw-hd-lt, .drw-hd-rt {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top:2px;
+  border-bottom: 28px solid #fff;
+}
+
+.drw-hd-lt {
+  left:129px;
+  border-right: 14px solid transparent;
+  border-left: 1px solid transparent;
+}
+
+.drw-hd-rt {
+  right:131px;
+  border-left: 14px solid transparent;
+  border-right: 1px solid transparent;
+}
 
 
 
