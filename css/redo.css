@@ -474,20 +474,28 @@ if it's not present, don't show loader
 }
 
 
+#preloader-stats {
+    display: block;
+    position: absolute;
+    left: 45%;
+    width: 10%;
+    top: 65%;
+    z-index: 10001;
+}
 
 #progress{
   height:1px;
   background:#fff;
   position:absolute;
   width:0;
-  top:150%;
+  top:200%;
   z-index: 10001;
 }
 #progstat{
   font-size:0.7em;
   letter-spacing: 3px;
   position:absolute;
-  top:150%;
+  top:200%;
 /*  margin-top:-40px; */
   width:100%;
   text-align:center;
