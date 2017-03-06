@@ -17,7 +17,7 @@
 ;(function(){
   function id(v){return document.getElementById(v); }
   function loadbar() {
-    var ovrl = id("overlay"),
+    var ovrl = id("preloader-stats"),
         prog = id("progress"),
         stat = id("progstat"),
         img = document.images,

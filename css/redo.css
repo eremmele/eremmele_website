@@ -210,14 +210,61 @@ if it's not present, don't show loader
 
     z-index: 10001;
 } */
+
+/* begin stats/percent */
+#preloader-stats {
+  display: block;
+  position: fixed;
+/*  left: 46%; 45*/
+/*  width: 8%; /* 10*/
+/*  top: 65%;*/
+  z-index: 10001;
+
+  width: 10%;
+
+  top: 60%;
+  left: 45%;
+}
+
+/*#overlay{
+  position:fixed;
+  z-index:99999;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  background:rgba(0,0,0,0.9);
+  transition: 1s 0.4s;
+}*/
+
+#progress{
+  height: 1px;
+  background:#fff;
+/*  position:absolute;
+  z-index: 10001;*/
+}
+#progstat{
+  font-size: inherit; /*0.7em*/
+  letter-spacing: inherit; /* 3px */
+  line-height: 30px;
+  /*position:absolute;*/
+/*  margin-top:-40px; */
+  text-align: center;
+  color: #fff;
+  /*z-index: 10001;*/
+}
+
+/* end stats/percent */
+
 #batman-preloader {
     display: block;
     position: relative;
     left: 50%;
     top: 50%;
-    width: 150px;
-    height: 150px;
-    margin: 25rem 0 0 -75px;
+    width: 5em; /*150px;*/
+    height: 5em; /*150px;*/
+    margin: 50% 0 0 -2.5em;
+    position: center;
 
     -webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
     animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
@@ -474,34 +521,6 @@ if it's not present, don't show loader
 }
 
 
-#preloader-stats {
-    display: block;
-    position: absolute;
-    left: 46%; /*45*/
-    width: 8%; /* 10*/
-    top: 65%;
-    z-index: 10001;
-}
-
-#progress{
-  height: 1px;
-  background:#fff;
-  position:absolute;
-  top: 200%;
-  z-index: 10001;
-}
-#progstat{
-  font-size: inherit; /*0.7em*/
-  letter-spacing: inherit; /* 3px */
-  line-height: 30px;
-  position:absolute;
-  top: 250%;
-/*  margin-top:-40px; */
-  width: 100%;
-  text-align: center;
-  color: #fff;
-  z-index: 10001;
-}
 
 
 
