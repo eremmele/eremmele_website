@@ -193,7 +193,7 @@ if it's not present, don't show loader
     height: 100%;
     z-index: 10000;
 }
-#loader {
+/*#loader {
     display: block;
     position: relative;
     left: 50%;
@@ -204,6 +204,20 @@ if it's not present, don't show loader
     border-radius: 50%;
     border: 3px solid transparent;
     border-top-color: #3498db;
+
+    -webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ 
+    animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera 
+
+    z-index: 10001;
+} */
+#batman-preloader {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 25rem 0 0 -75px;
 
     -webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
     animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
@@ -461,6 +475,25 @@ if it's not present, don't show loader
 
 
 
+#progress{
+  height:1px;
+  background:#fff;
+  position:absolute;
+  width:0;
+  top:150%;
+  z-index: 10001;
+}
+#progstat{
+  font-size:0.7em;
+  letter-spacing: 3px;
+  position:absolute;
+  top:150%;
+/*  margin-top:-40px; */
+  width:100%;
+  text-align:center;
+  color:#fff;
+  z-index: 10001;
+}
 
 
 
