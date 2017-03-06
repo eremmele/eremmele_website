@@ -477,29 +477,29 @@ if it's not present, don't show loader
 #preloader-stats {
     display: block;
     position: absolute;
-    left: 45%;
-    width: 10%;
+    left: 46%; /*45*/
+    width: 8%; /* 10*/
     top: 65%;
     z-index: 10001;
 }
 
 #progress{
-  height:1px;
+  height: 1px;
   background:#fff;
   position:absolute;
-  width:0;
-  top:200%;
+  top: 200%;
   z-index: 10001;
 }
 #progstat{
-  font-size:0.7em;
-  letter-spacing: 3px;
+  font-size: inherit; /*0.7em*/
+  letter-spacing: inherit; /* 3px */
+  line-height: 30px;
   position:absolute;
-  top:200%;
+  top: 250%;
 /*  margin-top:-40px; */
-  width:100%;
-  text-align:center;
-  color:#fff;
+  width: 100%;
+  text-align: center;
+  color: #fff;
   z-index: 10001;
 }
 

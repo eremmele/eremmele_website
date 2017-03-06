@@ -28,7 +28,7 @@
       c += 1;
       var perc = ((100/tot*c) << 0) +"%";
       prog.style.width = perc;
-      stat.innerHTML = "Loading "+ perc;
+      stat.innerHTML = perc; //stat.innerHTML = "Loading "+ perc;
       if(c===tot) return doneLoading();
     }
     function doneLoading(){
