@@ -1,186 +1,5 @@
-.clear {clear:both;}
-
-.scoot-over {
-   display: -webkit-flex;
-   display: flex;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-justify-content: flex-end;
-   justify-content: flex-end;
-}
-
-div#content {
-  width: 100vw;
-}
-
-/*FIRST*/
-div#up-left {
-  position:absolute;
-  left:0; /*32.5%*/ /*16%*/
-  z-index:4;
-  width: 65%;
-}
-  
-/* THIRD*/
-div#down-right {
-  clear: all;
-  right:0;
-  left:84.5%;  /*87.5%*/ /*67%*/
-  position:fixed;
-  bottom:0px;
-  z-index:5;
-  width: 62%;
-  margin-right: 0;
-  padding-right: 0;
-}
-
-/*SECOND*/
-div#down-left {
-  left:42.5%;  /*60%*/ /*46%*/
-  position:fixed;
-  bottom:0px;
-  z-index:3;
-  width: 65%;
-}
-
-/*div#right {
-  height:auto;
-  width:9400px;
-  position:fixed;
-  top:7%;
-  right:0px;
-  z-index:2;
-}*/
-
-.padding {
-  padding: 24% 0 24% 0;/*34% 0 34% 0;*/ /*30% or 20*/
-}
-
-.padding-3 {
-  padding: 50% 0 60% 0;/*50% 0 60% 0; /*20% 0 30% 0*/
-}
-
-.padding-2 {
-  padding: 40% 0 40% 0; /*36% 0 36% 0;*/     /*46% 0 46% 0; /*20% 0 30% 0*/
-}
 
 
-/* image zooming-- matches js on index 
-
-    .zoom {
-      display:inline-block;
-      position: relative;
-    }
-    .zoom img {
-      display: block;
-    }
-
-/* temporary */
-.zoom:hover img {
-  transform: scale(2); /*2*/
-  transition: transform 0.5s ease-in-out;
-}
-
-.zoom {
-  width: auto;
-  overflow: hidden;
-}
-
-/* Resources
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-#about {
-  /*outline: solid rgba(0,0,0,1) 15px;*/
-  /*border: solid black 15px;*/
-  /*margin-top: 15px;*/
-  /*margin-left: -15px;*/
-  width: 50%;
-  position: fixed;
-  font-size: 2rem; /*2.5rem*/
-  line-height: auto;  
-  letter-spacing: 0.25px;
-  opacity: 1;
-  list-style-type: none;
-  position: fixed;
-  display: none;
-  -webkit-transform:rotate(90deg) translateX(30px);
-  right:0; 
-  margin: 9% -5% 0 0; /*60px -87px 0 0;*/
-  /*margin-right:5px;*/
-  font-weight: 600;
-  font-smooth: always;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-#about-div:hover #about {
-  display: inline-block;
-  /*padding: 0 0 0 20%;*/
-}
-
-#batman {
-  position: fixed;
-  display: none;
-  padding: 10px;
-}
-
-#batman-div:hover #batman {
-  display: inline-block;
-}
-
-img {max-width: 100%}
-
-#process {
-  width: 50%;
-  font-size: 2rem; 
-  line-height: auto;  
-  letter-spacing: 0.25px;
-  opacity: 1;
-  list-style-type: none;
-  position: fixed;
-  display: none;
-  -webkit-transform:rotate(90deg) translateX(145px);
-  right:0; 
-  margin: 20px -173px 0 0; /*-55px*/
-  font-weight: 600;
-  font-smooth: always;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-#process-div:hover #process {
-  display: inline-block;
-  /*padding: 0 0 0 0;*/
-}
-
-.handout {
-  background: url('../images/overthere.space/eremmele_6handout_s.jpg') 50% center no-repeat;
-  background-size: 100%;
-}
-.handout:hover {
-  background: url('../images/overthere.space/eremmele_6handout2_s.jpg') 50% center no-repeat;
-  background-size: 100%;
-}
-
-
-
-
-
-
-/* Paste this css to your style sheet file or under head tag */
-/* This only works with JavaScript, 
-if it's not present, don't show loader 
-.no-js #loader { display: none;  }
-.js #loader { display: block; position: absolute; left: 100px; top: 0; }
-.se-pre-con {
-  position: fixed;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  z-index: 9999;
-  background: url("../images/bat-signal-flat.gif") center no-repeat #fff;
-}
-/*http://smallenvelop.com/demo/simple-pre-loader/images/loader-64x/Preloader_2.gif*/
 
 #loader-wrapper {
     position: fixed;
@@ -220,7 +39,7 @@ if it's not present, don't show loader
 
   width: 10%;
 
-  top: 60%;
+  top: 40%;
   left: 45%;
 }
 
@@ -357,9 +176,9 @@ if it's not present, don't show loader
     .no-js #loader-wrapper {
         display: none;
     }
-    /*.no-js h1 {
+    .no-js h1 {
         color: #000;
-    }*/
+    }
 
     /*#no-js-content {
         margin: 0 auto;
@@ -521,4 +340,5 @@ if it's not present, don't show loader
 
 
 
-/* baatmann! ends. */
+
+
