@@ -604,7 +604,7 @@ if it's not present, don't show loader
 
 /* --------------------- mouse text begins --------------------- */
 .img_title {
-    display: block;
+    display: inline-block;
     background: rgba(0,0,0,0);
     position: absolute;
     color: #fff;
@@ -612,11 +612,14 @@ if it's not present, don't show loader
 }
 .image_container {
     cursor: none;
-    display: block;   
+    display: inline-block;   
 }
 
 
 
 .superman {
   z-index: 9999999;
+}
+.superman:target {
+  display: none;
 }
