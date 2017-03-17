@@ -129,9 +129,47 @@ div#down-left {
 
 img {max-width: 100%}
 
+#process.background {
+  background: rgba(0,0,0,0.8) cover;
+  width: 100%;
+}
+
+/** LIGHTBOX MARKUP **/
+
+.process {
+  /** Default lightbox to hidden */
+  display: none;
+
+  /** Position and style */
+  position: fixed;
+  z-index: 9999999;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+}
+
+.process #process {
+  /** Pad the lightbox image */
+  max-width: 90%;
+  max-height: 80%;
+  margin-top: 2%;
+}
+
+.process:target {
+  /** Remove default browser outline */
+  outline: none;
+
+  /** Unhide lightbox **/
+  display: block;
+}
+
+
 #process {
-  width: 50%;
-  font-size: 2rem; 
+  width: 75%;
+  font-size: inherit; 
   line-height: auto;  
   letter-spacing: 0.25px;
   opacity: 1;
@@ -140,7 +178,7 @@ img {max-width: 100%}
   display: none;
   -webkit-transform:rotate(90deg) translateX(145px);
   right:0; 
-  margin: 20px -173px 0 0; /*-55px*/
+  margin: 2% 2% 0 0; /* 20px -173px 0 0; */
   font-weight: 600;
   font-smooth: always;
     -webkit-font-smoothing: antialiased;
@@ -522,3 +560,63 @@ if it's not present, don't show loader
 
 
 /* baatmann! ends. */
+
+
+
+
+/* --------------------- lightbox begins --------------------- */
+
+/** LIGHTBOX MARKUP **/
+
+.lightbox {
+  /** Default lightbox to hidden */
+  display: none;
+
+  /** Position and style */
+  position: fixed;
+  z-index: 9999999;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+}
+
+.lightbox img {
+  /** Pad the lightbox image */
+  max-width: 90vw;
+  max-height: 80vh;
+  margin-top: 2%;
+  z-index: 9999999;
+}
+
+.lightbox:target {
+  /** Remove default browser outline */
+  outline: none;
+
+  /** Unhide lightbox **/
+  display: block;
+}
+
+
+/* lightbox ends */
+
+/* --------------------- mouse text begins --------------------- */
+.img_title {
+    display: block;
+    background: rgba(0,0,0,0);
+    position: absolute;
+    color: #fff;
+    font-size: 1.25rem; /*2.1rem*/ line-height: 1.5;  letter-spacing: 0.1rem; text-transform: lowercase;
+}
+.image_container {
+    cursor: none;
+    display: block;   
+}
+
+
+
+.superman {
+  z-index: 9999999;
+}

@@ -1,28 +1,28 @@
 var title = "";
-$(document).mousemove(function (e) {    
+$j(document).mousemove(function (e) {    
     
-    $(".image_container").each(function(i, v){
+    $j(".image_container").each(function(i, v){
     
         var container = v;
-        var img = $(this).children()[0];
+        var img = $j(this).children()[0];
         
-        if((e.pageY < $(img).offset().top || 
-           e.pageY > $(img).offset().top + $(img).height() ||
-           e.pageX < $(img).offset().left ||
-           e.pageX > $(img).offset().left + $(img).width()) ){
+        if((e.pageY < $j(img).offset().top || 
+           e.pageY > $j(img).offset().top + $j(img).height() ||
+           e.pageX < $j(img).offset().left ||
+           e.pageX > $j(img).offset().left + $j(img).width()) ){
            
-            if( $(container).children().length == 2){
-               $(container).children()[0].title = $($(container).children()[1]).html();
-               container.removeChild($(container).children()[1]);
+            if( $j(container).children().length == 2){
+               $j(container).children()[0].title = $j($j(container).children()[1]).html();
+               container.removeChild($j(container).children()[1]);
             }
     
         }
         else{  
-            if($(container).children().length == 1){
+            if($j(container).children().length == 1){
                 console.log("printing title");
-                title = $("<div class='img_title'>" + $(container).children()[0].title + "</div>");
-                $(container).children()[0].title = "";
-                $(container).append(title);
+                title = $j("<div class='img_title'>" + $j(container).children()[0].title + "</div>");
+                $j(container).children()[0].title = "";
+                $j(container).append(title);
             }
             title.offset({
                 top: (e.pageY ? e.pageY : e.clientX),
