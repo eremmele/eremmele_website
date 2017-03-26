@@ -64,6 +64,9 @@ div#down-left {
   padding: 40% 0 40% 0; /*36% 0 36% 0;*/     /*46% 0 46% 0; /*20% 0 30% 0*/
 }
 
+.padding-st-bottom {
+  padding: 4% 0 24% 0;/*match .padding*/
+}
 
 /* image zooming-- matches js on index 
 
@@ -128,67 +131,6 @@ div#down-left {
 }
 
 img {max-width: 100%}
-
-#process.background {
-  background: rgba(0,0,0,0.8) cover;
-  width: 100%;
-}
-
-/** LIGHTBOX MARKUP **/
-
-.process {
-  /** Default lightbox to hidden */
-  display: none;
-
-  /** Position and style */
-  position: fixed;
-  z-index: 9999999;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  top: 0;
-  left: 0;
-  background: rgba(0,0,0,0.8);
-}
-
-.process #process {
-  /** Pad the lightbox image */
-  max-width: 90%;
-  max-height: 80%;
-  margin-top: 2%;
-}
-
-.process:target {
-  /** Remove default browser outline */
-  outline: none;
-
-  /** Unhide lightbox **/
-  display: block;
-}
-
-
-#process {
-  width: 75%;
-  font-size: inherit; 
-  line-height: auto;  
-  letter-spacing: 0.25px;
-  opacity: 1;
-  list-style-type: none;
-  position: fixed;
-  display: none;
-  -webkit-transform:rotate(90deg) translateX(145px);
-  right:0; 
-  margin: 2% 2% 0 0; /* 20px -173px 0 0; */
-  font-weight: 600;
-  font-smooth: always;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-#process-div:hover #process {
-  display: inline-block;
-  /*padding: 0 0 0 0;*/
-}
 
 .handout {
   background: url('../images/overthere.space/eremmele_6handout_s.jpg') 50% center no-repeat;
@@ -581,6 +523,7 @@ if it's not present, don't show loader
   top: 0;
   left: 0;
   background: rgba(0,0,0,0.8);
+  overflow: scroll;
 }
 
 .lightbox img {
@@ -589,6 +532,21 @@ if it's not present, don't show loader
   max-height: 80vh;
   margin-top: 2%;
   z-index: 9999999;
+  overflow-y: visible;
+}
+
+figure {
+    display: inline-block;
+}
+
+figure figcaption {
+    text-align: right;
+    color: #fff;
+    text-decoration: none;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    font-size: 12px; /*1.25rem*/ line-height: 1.5;  letter-spacing: 0.1rem; text-transform: lowercase;
+    opacity: 0.5;
 }
 
 .lightbox:target {
@@ -597,6 +555,11 @@ if it's not present, don't show loader
 
   /** Unhide lightbox **/
   display: block;
+}
+
+figure p {
+  color: #fff;
+  text-decoration: none;
 }
 
 
