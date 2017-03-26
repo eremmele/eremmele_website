@@ -64,8 +64,16 @@ div#down-left {
   padding: 50% 0 60% 0;/*50% 0 60% 0; /*20% 0 30% 0*/
 }
 
+.margin-3 {
+  margin: 50% 0 60% 0;
+}
+
 .padding-2 {
   padding: 40% 0 40% 0; /*36% 0 36% 0;*/     /*46% 0 46% 0; /*20% 0 30% 0*/
+}
+
+.margin-2 {
+  margin: 40% 0 40% 0;
 }
 
 .padding-st-bottom {
@@ -137,11 +145,11 @@ div#down-left {
 img {max-width: 100%}
 
 .handout {
-  background: url('../images/overthere.space/eremmele_6handout_s.jpg') 50% center no-repeat;
+  background: url('../images/overthere.space/eremmele_6handout2_s.jpg') 50% center no-repeat;
   background-size: 100%;
 }
 .handout:hover {
-  background: url('../images/overthere.space/eremmele_6handout2_s.jpg') 50% center no-repeat;
+  background: url('../images/overthere.space/eremmele_6handout_s.jpg') 50% center no-repeat;
   background-size: 100%;
 }
 
@@ -574,12 +582,14 @@ figure p {
     display: inline-block;
     background: rgba(0,0,0,0);
     position: absolute;
+    text-align: center;
+    cursor: none;
     color: #fff;
     font-size: 1.25rem; /*2.1rem*/ line-height: 1.5;  letter-spacing: 0.1rem; text-transform: lowercase;
 }
 .image_container {
     cursor: none;
-    display: inline-block;   
+    display: inline-block;
 }
 
 
