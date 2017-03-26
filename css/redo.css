@@ -56,6 +56,10 @@ div#down-left {
   padding: 24% 0 24% 0;/*34% 0 34% 0;*/ /*30% or 20*/
 }
 
+.margin {
+  margin: 24% 0 24% 0;
+}
+
 .padding-3 {
   padding: 50% 0 60% 0;/*50% 0 60% 0; /*20% 0 30% 0*/
 }
