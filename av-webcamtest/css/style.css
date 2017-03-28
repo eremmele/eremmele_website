@@ -1,0 +1,42 @@
+body {
+  background-color: #fff;
+}
+body, button {
+  font-family: 'Montserrat', sans-serif;
+  font-size: small;
+}
+    
+.margin {
+  margin: 1%;
+  width: 80vw;
+}
+    
+#filterButtons {
+  width: 300px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+    
+button {
+  padding: 3px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  color: white;
+  background-color: #000;
+  border: none;
+  border-radius: 2px;
+}
+button:hover,
+button.hover {
+  background-color: #aaa;
+}
+button:active,
+button.active {
+  background-color: #000;
+}    
+    
+button:disabled,
+button.disabled {
+  background-color: #aaa;
+}
+
