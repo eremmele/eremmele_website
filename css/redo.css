@@ -39,7 +39,7 @@ div#down-left {
   left:42.5%;  /*60%*/ /*46%*/
   position:fixed;
   bottom:0px;
-  z-index:3;
+  z-index:5; /*3*/
   max-width: 32.5%; /*65%*/
 }
 
