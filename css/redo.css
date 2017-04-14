@@ -20,8 +20,30 @@ div#up-left {
   z-index:4;
   width: 65%;
 }
-  
-/* THIRD*/
+
+/*SECOND*/
+div#down-left {
+  left:42.5%;  /*60%*/ /*46%*/
+  position:fixed;
+  bottom:0px;
+  z-index:5; /*3*/
+  max-width: 32.5%; /*65%*/
+}
+
+/* THIRD
+div#down-right {
+  clear: all;
+  right:0;
+  left:84.5%;  /*87.5%*/ /*67%
+  position:fixed;
+  bottom:0px;
+  z-index:5;
+  width: 62%;
+  margin-right: 0;
+  padding-right: 0;
+} */
+
+/* THIRD -- test to change scroll direction */
 div#down-right {
   clear: all;
   right:0;
@@ -32,15 +54,6 @@ div#down-right {
   width: 62%;
   margin-right: 0;
   padding-right: 0;
-}
-
-/*SECOND*/
-div#down-left {
-  left:42.5%;  /*60%*/ /*46%*/
-  position:fixed;
-  bottom:0px;
-  z-index:5; /*3*/
-  max-width: 32.5%; /*65%*/
 }
 
 /*div#right {
@@ -78,6 +91,16 @@ div#down-left {
 
 .padding-st-bottom {
   padding: 4% 0 24% 0;/*match .padding*/
+}
+
+.end-bottom {
+  padding: 0;
+  bottom: 0;
+}
+
+.end-top {
+  padding: 0;
+  top: 0;
 }
 
 /* image zooming-- matches js on index 
@@ -202,6 +225,9 @@ if it's not present, don't show loader
     z-index: 10001;
 } */
 
+
+
+
 /* begin stats/percent */
 #preloader-stats {
   display: block;
@@ -248,6 +274,8 @@ if it's not present, don't show loader
 
 /* end stats/percent */
 
+
+
 #batman-preloader {
     display: block;
     position: fixed;
@@ -257,6 +285,7 @@ if it's not present, don't show loader
     /*height: 5em; /*150px;*/
     margin: 0 0 0 -2.5em;
     position: center;
+
 
     -webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
     animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
