@@ -156,7 +156,7 @@ div#down-right {
   padding: 0 0 0 10%;
 }
 
-#batman {
+/*#batman {
   position: fixed;
   display: none;
   padding: 10px;
@@ -164,7 +164,7 @@ div#down-right {
 
 #batman-div:hover #batman {
   display: inline-block;
-}
+}*/
 
 img {max-width: 100%}
 
@@ -273,24 +273,33 @@ if it's not present, don't show loader
 }
 
 /* end stats/percent */
+/* batman begins */
 
+body {
+  background:#000;
+}
 
+.parent {
+  position: relative;
+  z-index: 10001;
+}
+.child {
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+}
+
+#resize {
+   -ms-transform: scale(.25, .25); /* IE 9 */
+   -webkit-transform: scale(.25, .25); /* Safari */
+   transform: scale(.25, .25);
+}
 
 #batman-preloader {
     display: block;
-    position: fixed;
-    left: 50%;
-    top: 35%;
-    width: 5em; /*150px;*/
-    /*height: 5em; /*150px;*/
-    margin: 0 0 0 -2.5em;
-    position: center;
-
-
     -webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
     animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
-
-    z-index: 10001;
 }
 
     @-webkit-keyframes spin {
@@ -316,93 +325,7 @@ if it's not present, don't show loader
             -ms-transform: rotate(360deg);  /* IE 9 */
             transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
         }
-    }
-
-    #loader-wrapper .loader-section {
-        position: fixed;
-        top: 0;
-        width: 51%;
-        height: 100%;
-        background: #000;
-        z-index: 10000;
-        -webkit-transform: translateX(0);  /* Chrome, Opera 15+, Safari 3.1+ */
-        -ms-transform: translateX(0);  /* IE 9 */
-        transform: translateX(0);  /* Firefox 16+, IE 10+, Opera */
-    }
-
-    #loader-wrapper .loader-section.section-left {
-        left: 0;
-    }
-
-    #loader-wrapper .loader-section.section-right {
-        right: 0;
-    }
-
-    /* Loaded */
-    .loaded #loader-wrapper .loader-section.section-left {
-        -webkit-transform: translateX(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
-            -ms-transform: translateX(-100%);  /* IE 9 */
-                transform: translateX(-100%);  /* Firefox 16+, IE 10+, Opera */
-
-        -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  
-                transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
-    }
-
-    .loaded #loader-wrapper .loader-section.section-right {
-        -webkit-transform: translateX(100%);  /* Chrome, Opera 15+, Safari 3.1+ */
-            -ms-transform: translateX(100%);  /* IE 9 */
-                transform: translateX(100%);  /* Firefox 16+, IE 10+, Opera */
-
--webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  
-        transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
-    }
-    
-    .loaded #loader {
-        opacity: 0;
-        -webkit-transition: all 0.3s ease-out;  
-                transition: all 0.3s ease-out;
-    }
-    .loaded #loader-wrapper {
-        visibility: hidden;
-
-        -webkit-transform: translateY(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
-            -ms-transform: translateY(-100%);  /* IE 9 */
-                transform: translateY(-100%);  /* Firefox 16+, IE 10+, Opera */
-
-        -webkit-transition: all 0.3s 1s ease-out;  
-                transition: all 0.3s 1s ease-out;
-    }
-    
-
-
-    /* JavaScript Turned Off */
-    .no-js #loader-wrapper {
-        display: none;
-    }
-    /*.no-js h1 {
-        color: #000;
-    }*/
-
-    /*#no-js-content {
-        margin: 0 auto;
-        padding-bottom: 50px;
-        width: 80%;
-        max-width: 978px;
-    }  */
-
-
-
-.inner-y {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  margin: -87px 0px 0px -160px;
-  width: 320px;
-  height: 174px;
-  background-color: #000;
-  border-radius: 195px / 106px;
-  overflow:hidden;
-}
+    } 
 
 .inner-b {
   position: absolute;
@@ -539,13 +462,82 @@ if it's not present, don't show loader
   right:131px;
   border-left: 14px solid transparent;
   border-right: 1px solid transparent;
-}
+} 
 
 
+/* batman ends*/
 
-/* baatmann! ends. */
+    #loader-wrapper .loader-section {
+        position: fixed;
+        top: 0;
+        width: 51%;
+        height: 100%;
+        background: #000;
+        z-index: 10000;
+        -webkit-transform: translateX(0);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: translateX(0);  /* IE 9 */
+        transform: translateX(0);  /* Firefox 16+, IE 10+, Opera */
+    }
+
+    #loader-wrapper .loader-section.section-left {
+        left: 0;
+    }
+
+    #loader-wrapper .loader-section.section-right {
+        right: 0;
+    }
+
+    /* Loaded */
+    .loaded #loader-wrapper .loader-section.section-left {
+        -webkit-transform: translateX(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: translateX(-100%);  /* IE 9 */
+                transform: translateX(-100%);  /* Firefox 16+, IE 10+, Opera */
+
+        -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  
+                transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    }
+
+    .loaded #loader-wrapper .loader-section.section-right {
+        -webkit-transform: translateX(100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: translateX(100%);  /* IE 9 */
+                transform: translateX(100%);  /* Firefox 16+, IE 10+, Opera */
+
+-webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  
+        transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    }
+    
+    .loaded #loader {
+        opacity: 0;
+        -webkit-transition: all 0.3s ease-out;  
+                transition: all 0.3s ease-out;
+    }
+    .loaded #loader-wrapper {
+        visibility: hidden;
+
+        -webkit-transform: translateY(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: translateY(-100%);  /* IE 9 */
+                transform: translateY(-100%);  /* Firefox 16+, IE 10+, Opera */
+
+        -webkit-transition: all 0.3s 1s ease-out;  
+                transition: all 0.3s 1s ease-out;
+    }
+    
 
 
+    /* JavaScript Turned Off */
+    .no-js #loader-wrapper {
+        display: none;
+    }
+    /*.no-js h1 {
+        color: #000;
+    }*/
+
+    /*#no-js-content {
+        margin: 0 auto;
+        padding-bottom: 50px;
+        width: 80%;
+        max-width: 978px;
+    }  */
 
 
 /* --------------------- lightbox begins --------------------- */
@@ -603,10 +595,6 @@ figure p {
   color: #fff;
   text-decoration: none;
 }
-
-
-
-
 
 
 
