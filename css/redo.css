@@ -1,12 +1,7 @@
 .clear {clear:both;}
 
-.scoot-over {
-   display: -webkit-flex;
-   display: flex;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-justify-content: flex-end;
-   justify-content: flex-end;
+body {
+  background:#000;
 }
 
 div#content {
@@ -65,28 +60,16 @@ div#down-right {
   z-index:2;
 }*/
 
-.padding {
-  padding: 24% 0 24% 0;/*34% 0 34% 0;*/ /*30% or 20*/
-}
-
 .margin {
-  margin: 24% 0 24% 0;
-}
-
-.padding-3 {
-  padding: 50% 0 60% 0;/*50% 0 60% 0; /*20% 0 30% 0*/
+  margin: 24% 0 24% 0;/*34% 0 34% 0;*/ /*30% or 20*/
 }
 
 .margin-3 {
-  margin: 50% 0 60% 0;
-}
-
-.padding-2 {
-  padding: 40% 0 40% 0; /*36% 0 36% 0;*/     /*46% 0 46% 0; /*20% 0 30% 0*/
+  margin: 50% 0 60% 0;/*50% 0 60% 0; /*20% 0 30% 0*/
 }
 
 .margin-2 {
-  margin: 40% 0 40% 0;
+  margin: 40% 0 40% 0; /*36% 0 36% 0;*/     /*46% 0 46% 0; /*20% 0 30% 0*/
 }
 
 .padding-st-bottom {
@@ -103,37 +86,17 @@ div#down-right {
   top: 0;
 }
 
-/* image zooming-- matches js on index 
-
-    .zoom {
-      display:inline-block;
-      position: relative;
-    }
-    .zoom img {
-      display: block;
-    }
-
-/* temporary */
-.zoom:hover img {
-  transform: scale(2); /*2*/
-  transition: transform 0.5s ease-in-out;
-}
-
-.zoom {
-  width: auto;
-  overflow: hidden;
-}
 
 /* Resources
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-#about {
+/*#about-old {
   /*outline: solid rgba(0,0,0,1) 15px;*/
   /*border: solid black 15px;*/
   /*margin-top: 15px;*/
-  /*margin-left: -15px;*/
+  /*margin-left: -15px;*
   width: 50%;
   position: fixed;
-  font-size: 2rem; /*2.5rem*/
+  font-size: 2rem; /*2.5rem*
   line-height: auto;  
   letter-spacing: 0.25px;
   opacity: 1;
@@ -142,29 +105,129 @@ div#down-right {
   -webkit-transform:rotate(90deg) translateX(30px);
   right:0; 
   margin: 5% -0.5% 0 0; /*60px -87px 0 0;*/
-  /*margin-right:5px;*/
+  /*margin-right:5px;*
   font-weight: 600;
   font-smooth: always;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  /*background-color:rgba(0,0,0,0.5);*/
+  /*background-color:rgba(0,0,0,0.5);*
   background-size: cover;
-}
+}*/
 
-#about-div:hover #about {
+/*#about-div:hover #about {
   display: inline-block;
   padding: 0 0 0 10%;
 }
 
-/*#batman {
-  position: fixed;
-  display: none;
-  padding: 10px;
+#about-div:active #about {
+  display: inline-block;
+  padding: 0 0 0 10%;
+}*/
+
+#processinfo, #aboutinfo {
+    display: none;
 }
 
-#batman-div:hover #batman {
-  display: inline-block;
-}*/
+#aboutinfo {
+  width: 20%;
+  /*-webkit-transform-origin: left top;
+  -webkit-transform:rotate(90deg) translateX(5%) translateY(-300%);*/
+  color: #fff;
+  font-weight: 600;
+  font-smooth: always;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  z-index: 9999;
+  margin: 9vh 0 0 12vh;
+  font-size: 2rem; /*2.1rem*/ 
+  line-height: 1.25; /*1.2*/  
+  letter-spacing: .05rem;
+  text-transform: lowercase;
+  overflow: scroll;
+  position: fixed;
+}
+#aboutinfo div {
+  overflow-y: visible;
+}
+@media screen and (min-width: 760px) and (max-width: 1200px) {
+#aboutinfo {
+  width: 30%; 
+  }
+}
+@media screen and (min-width: 460px) and (max-width: 760px) {
+#aboutinfo {
+  width: 50%; 
+  font-size:1.8rem;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 460px) {
+#aboutinfo {
+  width: 60%; 
+  font-size:1.8rem;
+  }
+}
+#aboutinfo a, #aboutinfo a:visited {
+  color: #fff;
+}
+#aboutinfo a:hover {
+  color: #ababab;
+}
+#about a:active {
+  color: #aaa;
+}
+u {
+  border-bottom: 1px solid;
+  line-height: 0.5px;
+  text-decoration: none;
+  display: inline;
+}
+
+#processinfo {
+  background-color: rgba(0,0,0,0.8);
+  z-index: 9998;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: scroll;
+  position: fixed;
+}
+#processinfo figure {
+  color: #fff;
+
+  font-weight: 600;
+  font-smooth: always;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  z-index: 999999;
+  margin: 9vh 0 0 12vh;
+  width: 30%;
+  font-size: 2rem; /*2.1rem*/ 
+  line-height: 1.25; /*1.2*/  
+  letter-spacing: .05rem;
+  text-transform: lowercase; 
+  overflow-y: visible;
+}
+@media screen and (min-width: 1096px) and (max-width: 1400px) {
+#processinfo figure {
+  min-width: 430px; 
+  }
+}
+@media screen and (min-width: 761px) and (max-width: 1095px) {
+#processinfo figure {
+  width: 430px; 
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 760px) {
+#processinfo figure {
+  width: 50%; 
+  max-width: 430px;
+  }
+}
+#processinfo img {
+  margin: 0 0 10vh 0;
+}
+
 
 img {max-width: 100%}
 
@@ -176,11 +239,6 @@ img {max-width: 100%}
   background: url('../images/overthere.space/eremmele_6handout_s.jpg') 50% center no-repeat;
   background-size: 100%;
 }
-
-
-
-
-
 
 /* Paste this css to your style sheet file or under head tag */
 /* This only works with JavaScript, 
@@ -275,10 +333,6 @@ if it's not present, don't show loader
 /* end stats/percent */
 /* batman begins */
 
-body {
-  background:#000;
-}
-
 .parent {
   position: relative;
   z-index: 10001;
@@ -291,9 +345,9 @@ body {
 }
 
 #resize {
-   -ms-transform: scale(.25, .25); /* IE 9 */
-   -webkit-transform: scale(.25, .25); /* Safari */
-   transform: scale(.25, .25);
+   -ms-transform: scale(.15, .15); /* IE 9 */
+   -webkit-transform: scale(.15, .15); /* Safari */
+   transform: scale(.15, .15);
 }
 
 #batman-preloader {
@@ -600,6 +654,8 @@ figure p {
 
 
 
+
+
 /* lightbox ends */
 
 /* --------------------- mouse text begins --------------------- */
@@ -625,3 +681,4 @@ figure p {
 .superman:target {
   display: none;
 }
+
