@@ -598,6 +598,8 @@ if it's not present, don't show loader
 
 /** LIGHTBOX MARKUP **/
 
+
+/*need to clean this up, slides on mobile*/
 .lightbox {
   /** Default lightbox to hidden */
   display: none;
