@@ -127,7 +127,6 @@ div#down-right {
 #processinfo, #aboutinfo {
     display: none;
 }
-
 #aboutinfo {
   width: 20%;
   /*-webkit-transform-origin: left top;
@@ -528,9 +527,9 @@ if it's not present, don't show loader
         height: 100%;
         background: #000;
         z-index: 10000;
-        -webkit-transform: translateX(0);  /* Chrome, Opera 15+, Safari 3.1+ */
-        -ms-transform: translateX(0);  /* IE 9 */
-        transform: translateX(0);  /* Firefox 16+, IE 10+, Opera */
+/*        -webkit-transform: translateX(0);  /* Chrome, Opera 15+, Safari 3.1+ */
+/*        -ms-transform: translateX(0);  /* IE 9 */
+/*        transform: translateX(0);  /* Firefox 16+, IE 10+, Opera */
     }
 
     #loader-wrapper .loader-section.section-left {
@@ -543,37 +542,52 @@ if it's not present, don't show loader
 
     /* Loaded */
     .loaded #loader-wrapper .loader-section.section-left {
-        -webkit-transform: translateX(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
-            -ms-transform: translateX(-100%);  /* IE 9 */
-                transform: translateX(-100%);  /* Firefox 16+, IE 10+, Opera */
+ /*       -webkit-transform: translateX(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+ /*           -ms-transform: translateX(-100%);  /* IE 9 */
+ /*               transform: translateX(-100%);  /* Firefox 16+, IE 10+, Opera */
 
-        -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  
-                transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+ /*       -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  
+                transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000); */
     }
 
     .loaded #loader-wrapper .loader-section.section-right {
-        -webkit-transform: translateX(100%);  /* Chrome, Opera 15+, Safari 3.1+ */
-            -ms-transform: translateX(100%);  /* IE 9 */
-                transform: translateX(100%);  /* Firefox 16+, IE 10+, Opera */
+/*        -webkit-transform: translateX(100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+/*            -ms-transform: translateX(100%);  /* IE 9 */
+/*                transform: translateX(100%);  /* Firefox 16+, IE 10+, Opera */
 
--webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  
-        transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+/*-webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  
+        transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000); */
     }
     
     .loaded #loader {
         opacity: 0;
         -webkit-transition: all 0.3s ease-out;  
-                transition: all 0.3s ease-out;
+                transition: all 0.3s ease-out; 
     }
     .loaded #loader-wrapper {
         visibility: hidden;
 
-        -webkit-transform: translateY(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
-            -ms-transform: translateY(-100%);  /* IE 9 */
-                transform: translateY(-100%);  /* Firefox 16+, IE 10+, Opera */
+/*        -webkit-transform: translateY(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+/*            -ms-transform: translateY(-100%);  /* IE 9 */
+/*                transform: translateY(-100%);  /* Firefox 16+, IE 10+, Opera */
 
-        -webkit-transition: all 0.3s 1s ease-out;  
-                transition: all 0.3s 1s ease-out;
+/*        -webkit-transition: all 0.3s 1s ease-out;  
+                transition: all 0.3s 1s ease-out; */
+
+         @-webkit-keyframes fadeOut {
+            0% {opacity: 1;}
+            100% {opacity: 0;}
+         }
+         
+         @keyframes fadeOut {
+            0% {opacity: 1;}
+            100% {opacity: 0;}
+         }
+         
+         .fadeOut {
+            -webkit-animation-name: fadeOut;
+            animation-name: fadeOut;
+         }
     }
     
 
