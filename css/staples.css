@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
-
+@import url('https://fonts.googleapis.com/css?family=Syncopate&display=swap');
 /* Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* NOTE
@@ -9,7 +9,7 @@ are based on 10px sizing. So basically 1.5rem = 15px :) */
 /* my note- tracking value of 1000 is equal to 1 em in CSS--convert to rem*/
 
 html, body {
-  font-size: 62.5%; 
+  font-size: 62.5%;
   background-color: #000;
   margin: 0;
   color: #fff;
@@ -18,8 +18,8 @@ html, body {
   /*font-size: 1rem; /* currently ems cause chrome bug misinterpreting rems on body element */
   /*line-height: 1.5;*/
   font-weight: 300;
-  font-family: 'Open Sans', sans-serif;
-  -webkit-touch-callout: none; /* disable save on iphone */ 
+  font-family: 'Syncopate','Open Sans', sans-serif;
+  -webkit-touch-callout: none; /* disable save on iphone */
   overflow-x:hidden;
   overflow-y:scroll;
 }
@@ -39,7 +39,7 @@ cursor: none;
 }*/
 
 /* Navigation
-–––––––––––––––––––––––––––––––––––––––––––––––––– */ 
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 /*@media screen and (min-width: 35.5em) {}
 @media screen and (min-width: 67.250em) {}
 @media screen and (min-width: 75.875em) {}*/
@@ -55,36 +55,42 @@ li {
     list-style:none
 }
 
-/* Desktop 
+/* Desktop
 @media screen and (min-width: 801px) {
   #desktop {
     display: inline-block;
   }
   #mobile {
     display: none;
-  } 
+  }
 }
 
-/* Mobile 
+/* Mobile
 @media screen and (min-width: 0px) and (max-width: 800px) {}
   #desktop {
     display: none;
-  } 
+  }
   #mobile {
     display: inline-block;
   }
 } */
 
-ul {    
+ul {
     margin:0;
-    font-size: 1.25rem; /*2.1rem*/ 
-    line-height: 1.2;  
+    font-size: 1.25rem; /*2.1rem*/
+    line-height: 1.2;
     letter-spacing: .1rem;
-    text-transform: lowercase; 
+    text-transform: lowercase;
   }
-
+.header{
+  font-size: 1.25rem;
+  letter-spacing: .1rem;
+  margin-left: 1.5em;
+  margin-top: 1.5em;
+  text-transform: uppercase;
+}
 .main-nav {
-    width:100vh;    
+    width:100vh;
     height:45px;
     position:fixed;
     z-index:9999;
@@ -97,7 +103,8 @@ ul {
     margin-right: -50%;
     transform: translate(-50%, -50%) */
     /*padding-right: 2.25vh;*/
-    top: 17.5%;
+    top: 30%;
+    left: 1%;
   }
 
 ul.nav li {
@@ -105,7 +112,8 @@ ul.nav li {
     margin-right: 10vh;/*5.25vh (most recent); /*20px*/
     float:right;
     height:100%;
-    /*line-height:45px;*/ 
+    /*line-height:45px;*/
+    text-transform: uppercase;
   }
 
 /* ---------------------------------------- */
@@ -119,18 +127,18 @@ ul.nav li {
 
 
 
-ul.nav {    
+ul.nav {
     margin:0 auto;
-    height:100%;        
+    height:100%;
 }
 
-ul.nav li a {           
-    color:#fff;    
+ul.nav li a {
+    color:#fff;
 }
 
 .main-nav a, .main-nav a:visited {
-  color: #ffffff; 
-}  
+  color: #ffffff;
+}
 .main-nav a:hover, .main-nav a:target {
   color: #ababab; /*cbcbcb*/ /*ebebeb*/
 }
@@ -141,13 +149,13 @@ h1, h2, h3, h4, h5, h6 {
   /*margin-top: 0;*/
   /*margin-bottom: 2rem;*/
   font-weight: 300; }
-h1 { font-size: 1.25rem; /*2.1rem*/ line-height: 1.2;  letter-spacing: .6rem; text-transform: lowercase; 
+h1 { font-size: 1.25rem; /*2.1rem*/ line-height: 1.2;  letter-spacing: .6rem; text-transform: lowercase;
   }
-h2 { font-size: 1.25rem; /*2.1rem*/ line-height: 1.5;  letter-spacing: 0.1rem; text-transform: lowercase; 
+h2 { font-size: 1.25rem; /*2.1rem*/ line-height: 1.5;  letter-spacing: 0.1rem; text-transform: lowercase;
   }
 
 
-/* Larger than phablet 
+/* Larger than phablet
 
 footer p, p {
   font-size: 1.5rem;
@@ -155,16 +163,16 @@ footer p, p {
 }
 
 /* Links
-–––––––––––––––––––––––––––––––––––––––––––––––––– 
+––––––––––––––––––––––––––––––––––––––––––––––––––
 a {
-  color: #ffffff; 
+  color: #ffffff;
   text-decoration: none;
 }
 a:hover {
   color: #cbcbcb; }
 
 /* Lists
-–––––––––––––––––––––––––––––––––––––––––––––––––– 
+––––––––––––––––––––––––––––––––––––––––––––––––––
 ul {
   list-style: circle inside; }
 ol {
@@ -179,13 +187,13 @@ ol ul {
   margin: 1.5rem 0 1.5rem 3rem;
   font-size: 90%; }
 li {
-  margin-bottom: 1rem; 
+  margin-bottom: 1rem;
   display: inline;
 }
 
 
 /* Code
-–––––––––––––––––––––––––––––––––––––––––––––––––– 
+––––––––––––––––––––––––––––––––––––––––––––––––––
 code {
   padding: .2rem .5rem;
   margin: 0 .2rem;

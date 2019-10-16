@@ -9,17 +9,9 @@ div#content {
   width: 100vw;
 }
 
-/*FIRST*/
-div#up-left  {
-  position:absolute;
-  left:0; /*32.5%*/ /*16%*/
-  z-index:4;
-  width: 65%;
-}
-
 /*SECOND*/
 div#down-left {
-  left:42.5%;  /*60%*/ /*46%*/
+  left:25%;  /*60%*/ /*46%*/
   position:fixed;
   bottom:0px;
   z-index:5; /*3*/
@@ -29,7 +21,7 @@ div#down-left {
 /* THIRD */
 div#down-right {
   clear: all;
-  margin-left:84.5%;  /*87.5%*/ /*67%*/
+  left: 50%;  /*87.5%*/ /*67%*/
   position:absolute;
   /*bottom:0px;*/
   z-index:5;
@@ -38,30 +30,6 @@ div#down-right {
   height: auto;
   top: 14%;
 }
-
-/* THIRD
-div#down-right {
-  clear: all;
-  right:0;
-  left:84.5%;  /*87.5%*/ /*67%
-  position:fixed;
-  bottom:0px;
-  z-index:5;
-  width: 62%;
-  margin-right: 0;
-  padding-right: 0;
-} */
-
-
-
-/*div#right {
-  height:auto;
-  width:9400px;
-  position:fixed;
-  top:7%;
-  right:0px;
-  z-index:2;
-}*/
 
 .margin {
   margin: 24% 0 24% 0;/*34% 0 34% 0;*/ /*30% or 20*/
@@ -765,38 +733,4 @@ input:hover {
   top:1em;
   padding: 2em;
   width: 12.5em;
-
-  -webkit-animation: rotating 8s linear infinite;
-  -moz-animation: rotating 8s linear infinite;
-  -ms-animation: rotating 8s linear infinite;
-  -o-animation: rotating 8s linear infinite;
-  animation: rotating 8s linear infinite;
-}
-@-webkit-keyframes rotating /* Safari and Chrome*/ {
-  from {
-    -webkit-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-@keyframes rotating {
-  from {
-    -ms-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  to {
-    -ms-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
 }
