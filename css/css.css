@@ -1,0 +1,736 @@
+::scrollbar {
+  display: none;
+}
+
+
+.clear {clear:both;}
+
+div#content {
+  width: 100vw;
+}
+
+/*SECOND*/
+div#down-left {
+  left:25%;  /*60%*/ /*46%*/
+  position:fixed;
+  bottom:0px;
+  z-index:5; /*3*/
+  max-width: 32.5%; /*65%*/
+}
+
+/* THIRD */
+div#down-right {
+  clear: all;
+  left: 50%;  /*87.5%*/ /*67%*/
+  position:absolute;
+  /*bottom:0px;*/
+  z-index:5;
+  width: 62%;
+  padding-right: 0;
+  height: auto;
+  top: 14%;
+}
+
+.margin {
+  margin: 24% 0 24% 0;/*34% 0 34% 0;*/ /*30% or 20*/
+}
+
+.margin-3 {
+  margin: 50% 0 60% 0;/*50% 0 60% 0; /*20% 0 30% 0*/
+}
+
+.margin-2 {
+  margin: 40% 0 40% 0; /*36% 0 36% 0;*/     /*46% 0 46% 0; /*20% 0 30% 0*/
+}
+
+.padding-st-bottom {
+  padding: 4% 0 24% 0;/*match .padding*/
+}
+
+.end-bottom {
+  padding: 0;
+  bottom: 0;
+}
+
+.end-top {
+  padding: 0;
+  top: 0;
+}
+
+
+/* Resources
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#processinfo, #aboutinfo {
+    display: none;
+}
+#aboutinfo {
+  width: 20%;
+  /*-webkit-transform-origin: left top;
+  -webkit-transform:rotate(90deg) translateX(5%) translateY(-300%);*/
+  color: #fff;
+  font-weight: 600;
+  font-smooth: always;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  z-index: 9999;
+  margin: 9vh 0 0 12vh;
+  font-size: 2rem; /*2.1rem*/
+  line-height: 1.25; /*1.2*/
+  letter-spacing: .05rem;
+  text-transform: lowercase;
+  overflow: scroll;
+  position: fixed;
+}
+#aboutinfo div {
+  overflow-y: visible;
+}
+@media screen and (min-width: 760px) and (max-width: 1200px) {
+#aboutinfo {
+  width: 30%;
+  }
+}
+@media screen and (min-width: 460px) and (max-width: 760px) {
+#aboutinfo {
+  width: 50%;
+  font-size:1.8rem;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 460px) {
+#aboutinfo {
+  width: 60%;
+  font-size:1.8rem;
+  }
+}
+#aboutinfo a, #aboutinfo a:visited {
+  color: #fff;
+}
+#aboutinfo a:hover {
+  color: #ababab;
+}
+#about a:active {
+  color: #aaa;
+}
+u {
+  border-bottom: 1px solid;
+  line-height: 0.5px;
+  text-decoration: none;
+  display: inline;
+}
+
+#processinfo {
+  background-color: rgba(0,0,0,0.7); /*0.8*/
+  z-index: 9998;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: scroll;
+  position: fixed;
+}
+#processinfo figure {
+  color: #fff;
+
+  font-weight: 600;
+  font-smooth: always;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  z-index: 999999;
+  margin: 9vh 0 0 12vh;
+  width: 30%;
+  font-size: 2rem; /*2.1rem*/
+  line-height: 1.25; /*1.2*/
+  letter-spacing: .05rem;
+  text-transform: lowercase;
+  overflow-y: visible;
+}
+@media screen and (min-width: 1096px) and (max-width: 1400px) {
+#processinfo figure {
+  min-width: 430px;
+  }
+}
+@media screen and (min-width: 761px) and (max-width: 1095px) {
+#processinfo figure {
+  width: 430px;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 760px) {
+#processinfo figure {
+  width: 50%;
+  max-width: 430px;
+  }
+}
+#processinfo img {
+  margin: 0 0 10vh 0;
+}
+
+
+img {max-width: 100%}
+
+.handout {
+  background: url('../images/overthere.space/eremmele_6handout2_s.jpg') 50% center no-repeat;
+  background-size: 100%;
+}
+.handout:hover {
+  background: url('../images/overthere.space/eremmele_6handout_s.jpg') 50% center no-repeat;
+  background-size: 100%;
+}
+
+#loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+}
+
+
+
+/* begin stats/percent */
+#preloader-stats {
+  display: block;
+  position: fixed;
+/*  left: 46%; 45*/
+/*  width: 8%; /* 10*/
+/*  top: 65%;*/
+  z-index: 10001;
+
+  width: 10%;
+
+  top: 60%;
+  left: 45%;
+}
+
+#progress{
+  height: 1px;
+  background:#fff;
+/*  position:absolute;*/
+  z-index: 10001;
+  top: 50%;
+}
+#progstat{
+  font-size: inherit; /*0.7em*/
+  letter-spacing: inherit; /* 3px */
+  /*line-height: 30px;*/
+  /*position:absolute;*/
+/*  margin-top:-40px; */
+  text-align: center;
+  color: #fff;
+  z-index: 10001;
+}
+
+/* end stats/percent */
+/* batman begins */
+
+.parent {
+  position: relative;
+  z-index: 10001;
+}
+.child {
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+}
+
+#resize {
+   -ms-transform: scale(.15, .15); /* IE 9 */
+   -webkit-transform: scale(.15, .15); /* Safari */
+   transform: scale(.15, .15);
+}
+
+#batman-preloader {
+    display: block;
+    -webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+    animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+}
+
+    @-webkit-keyframes spin {
+        0%   {
+            -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: rotate(0deg);  /* IE 9 */
+            transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+        }
+        100% {
+            -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: rotate(360deg);  /* IE 9 */
+            transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+        }
+    }
+    @keyframes spin {
+        0%   {
+            -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: rotate(0deg);  /* IE 9 */
+            transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+        }
+        100% {
+            -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: rotate(360deg);  /* IE 9 */
+            transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+        }
+    }
+
+.inner-b {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -75px 0px 0px -148px;
+  width: 296px;
+  height: 150px;
+  background-color: #fff;
+  border-radius: 205px / 106px;
+}
+
+.cut-lr, .cut-rr {
+  position: absolute;
+  width: 54px;
+  height: 54px;
+  border-radius: 500px;
+  background-color: #000;
+  top: 32px;
+  margin: -27px 0px 0px -27px;
+}
+
+.cut-bll, .cut-brr {
+  position: absolute;
+  width: 78px;
+  height: 44px;
+  border-radius: 205px / 106px;
+  background-color: #000;
+  bottom:-2px;
+}
+
+.cut-lr {
+  left:102px;
+}
+
+.cut-rr {
+  left:192px;
+}
+
+.cut-bll {
+  -webkit-transform:rotate(45deg);
+  -moz-transform:rotate(45deg);
+  -ms-transform:rotate(45deg);
+  -o-transform:rotate(45deg);
+  transform:rotate(45deg);
+  left:42px;
+}
+
+.cut-brr {
+  -webkit-transform:rotate(-45deg);
+  -moz-transform:rotate(-45deg);
+  -ms-transform:rotate(-45deg);
+  -o-transform:rotate(-45deg);
+  transform:rotate(-45deg);
+  right:42px;
+}
+
+.cut-blll, .cut-bllr, .cut-brll, .cut-brlr {
+  position: absolute;
+  width: 70px;
+  height: 32px;
+  border-radius: 205px / 106px;
+  background-color: #000;
+  bottom: 1px;
+}
+
+.cut-blll, .cut-brll {
+  -webkit-transform:rotate(-112deg);
+  -moz-transform:rotate(-112deg);
+  -ms-transform:rotate(-112deg);
+  -o-transform:rotate(-112deg);
+  transform:rotate(-112deg);
+}
+
+.cut-blll {
+  right:72px;
+}
+
+.cut-brll {
+  left:93px;
+}
+
+.cut-brlr {
+  left:72px;
+}
+
+.cut-bllr {
+  right:93px;
+}
+
+.cut-brlr, .cut-bllr {
+  -webkit-transform:rotate(-67deg);
+  -moz-transform:rotate(-67deg);
+  -ms-transform:rotate(-67deg);
+  -o-transform:rotate(-67deg);
+  transform:rotate(-67deg);
+}
+
+.cut-hd {
+  width: 110px;
+  height: 34px;
+  background: #000;
+  left: 92px;
+  top:-2px;
+  position: absolute;
+}
+
+.drw-hd-m {
+  position: absolute;
+  width: 36px;
+  height: 56px;
+  background-color: #fff;
+  left: 50%;
+  margin-left: -19px;
+  border-radius: 230px / 110px;
+  top: 23px;
+}
+
+.drw-hd-lt, .drw-hd-rt {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top:2px;
+  border-bottom: 28px solid #fff;
+}
+
+.drw-hd-lt {
+  left:129px;
+  border-right: 14px solid transparent;
+  border-left: 1px solid transparent;
+}
+
+.drw-hd-rt {
+  right:131px;
+  border-left: 14px solid transparent;
+  border-right: 1px solid transparent;
+}
+
+
+/* batman ends*/
+
+    #loader-wrapper .loader-section {
+        position: fixed;
+        top: 0;
+        width: 51%;
+        height: 100%;
+        background: #000;
+        z-index: 10000;
+    }
+
+    #loader-wrapper .loader-section.section-left {
+        left: 0;
+    }
+
+    #loader-wrapper .loader-section.section-right {
+        right: 0;
+    }
+
+    /* Loaded */
+    .loaded #loader-wrapper .loader-section.section-left {
+    }
+
+    .loaded #loader-wrapper .loader-section.section-right {
+    }
+
+    .loaded #loader {
+        opacity: 0;
+        -webkit-transition: all 0.3s ease-out;
+                transition: all 0.3s ease-out;
+    }
+    .loaded #loader-wrapper {
+        visibility: hidden;
+
+         @-webkit-keyframes fadeOut {
+            0% {opacity: 1;}
+            100% {opacity: 0;}
+         }
+
+         @keyframes fadeOut {
+            0% {opacity: 1;}
+            100% {opacity: 0;}
+         }
+
+         .fadeOut {
+            -webkit-animation-name: fadeOut;
+            animation-name: fadeOut;
+         }
+    }
+
+
+
+    /* JavaScript Turned Off */
+    .no-js #loader-wrapper {
+        display: none;
+    }
+    /*.no-js h1 {
+        color: #000;
+    }*/
+
+    /*#no-js-content {
+        margin: 0 auto;
+        padding-bottom: 50px;
+        width: 80%;
+        max-width: 978px;
+    }  */
+
+    html .slides,
+    body .slides,
+    html > .dg,
+    body > .dg {
+      display: none;
+    }
+
+
+/*
+.spinner {
+
+}
+    .spinner {
+      width: 40px;
+      height: 40px;
+      background-color: #fff;
+      -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+      animation: sk-rotateplane 1.2s infinite ease-in-out;
+      position: absolute;
+      top: 48%;
+      left: 48%;
+    }
+
+    @-webkit-keyframes sk-rotateplane {
+      0% { -webkit-transform: perspective(120px) }
+      50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+      100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+    }
+
+    @keyframes sk-rotateplane {
+      0% {
+        transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+        -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+      } 50% {
+        transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+        -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+      } 100% {
+        transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+        -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+      }
+    }
+
+    .spinner-wrapper {
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #000;
+z-index: 999999;
+}*/
+
+
+
+
+
+/* --------------------- lightbox begins --------------------- */
+
+/** LIGHTBOX MARKUP **/
+
+
+/*need to clean this up, slides on mobile*/
+.lightbox {
+  /** Default lightbox to hidden */
+  display: none;
+
+  /** Position and style */
+  position: fixed;
+  z-index: 9999999;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+  overflow: scroll;
+}
+
+.lightbox img {
+  /** Pad the lightbox image */
+  max-width: 90vw;
+  max-height: 80vh;
+  margin-top: 2%;
+  z-index: 9999999;
+  overflow-y: visible;
+}
+
+figure {
+    display: inline-block;
+}
+
+figure figcaption {
+    text-align: right;
+    color: #fff;
+    text-decoration: none;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    font-size: 12px; /*1.25rem*/ line-height: 1.5;  letter-spacing: 0.1rem; text-transform: lowercase;
+    opacity: 0.5;
+}
+
+.lightbox:target {
+  /** Remove default browser outline */
+  outline: none;
+
+  /** Unhide lightbox **/
+  display: block;
+}
+
+figure p {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+/* lightbox ends */
+
+/* --------------------- mouse text begins --------------------- */
+.img_title {
+    display: inline-block;
+    background: rgba(0,0,0,0);
+    position: absolute;
+    text-align: center;
+    cursor: none;
+    color: #fff;
+    font-size: 1.25rem; /*2.1rem*/ line-height: 1.5;  letter-spacing: 0.1rem; text-transform: lowercase;
+}
+.image_container {
+    cursor: none;
+    display: inline-block;
+}
+
+
+
+.superman {
+  z-index: 9999999;
+}
+.superman:target {
+  display: none;
+}
+
+
+/* --------------------- instagram feed begins --------------------- */
+
+.igviewer {
+  position: fixed; /*fixed*/
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  /*background-color: RGBA(29, 31, 32, 0.9);*/
+}
+.igviewer img {
+  display: block;
+  /*margin: 1rem auto;*/
+  height: calc(100vh - 2rem);
+  width: auto;
+  /*box-shadow: 0px 10px 40px 10px rgba(0, 0, 0, 0.8); */
+}
+.igviewer.hidden {
+  display: none;
+}
+
+.instagram {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  overflow: hidden;
+  width: 248px;
+  float: left;
+  margin: 9vh 0 0 12vh;
+}
+.instagram .image {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  width: 248px; height:30vw; /*248px width*/
+  margin: auto;
+  overflow: hidden;
+    -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+  position: relative;
+  cursor: pointer;
+}
+.instagram .image .caption {
+  display: none;
+  position: absolute;
+  float: center;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0);
+  color: #FFF;
+  padding: 2em;
+    margin:0;
+    font-size: 1.25rem; /*2.1rem*/
+    line-height: 1.3;
+    letter-spacing: .1rem;
+    text-transform: lowercase;
+}
+/*.instagram .image:hover {
+  background-size: 110%;
+}*/
+.instagram .image:hover .caption {
+  display: block;
+}
+
+/* instagram feed ends */
+
+/* PASSWORD PROTECTTTTTTTTTT GOTHAM*/
+.flex-container {
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.password-protect {
+  position: fixed;
+  z-index: 9998;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  left: 0;
+  background: rgba(0,0,0,0.95);
+}
+input {
+  background:#000;
+  border: none;
+  /*-webkit-transform-origin: left top;
+  -webkit-transform:rotate(90deg) translateX(5%) translateY(-300%);*/
+  color: #fff;
+  font-weight: 600;
+  font-smooth: always;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  font-size: 2rem; /*2.1rem*/
+  letter-spacing: .05rem;
+  text-transform: lowercase;
+}
+input:hover {
+  cursor: pointer;
+}
+
+
+
+/* PAGE SPINNING LOGO */
+.rotating {
+  position: fixed;
+  right:0;
+  top:1em;
+  padding: 2em;
+  width: 12.5em;
+}
