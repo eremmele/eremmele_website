@@ -88,21 +88,25 @@ ul {
   vertical-align: bottom;
   float:left;
   position: fixed;
-  opacity: 0.3;
+  opacity: 1;
   color: #fff;
   font-size: 1.25rem;
-  line-height: 1.2;
+  line-height: 1.5;
   letter-spacing: .1rem;
   left: 1%;
+}
+.footer p span {
+  opacity: .1;
 }
 .header{
   font-size: 1.25rem;
   letter-spacing: .1rem;
-  margin-left: 1.5em;
+  margin-left: .5%;
   margin-top: 1.5em;
   text-transform: uppercase;
   z-index: 9999999;
   position: fixed;
+  display: block;
 }
 .main-nav {
     width:100vh;
@@ -133,6 +137,18 @@ ul.nav li {
 
 /* ---------------------------------------- */
 @media screen and (min-height: 0px) and (max-height: 720px) {
+  .footer, .footer p {
+    left: 10px;
+  }
+  .header {
+    margin-left: 10px;
+  }
+  .main-nav {
+      left: 10px;
+    }
+  body {
+        overflow-x:hidden;
+    }
 }
 /* ---------------------------------------- */
 @media screen and (min-width: 400px) and (max-width: 550px) {
