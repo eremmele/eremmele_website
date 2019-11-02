@@ -6,29 +6,17 @@
 .clear {clear:both;}
 
 div#content {
-  width: 100vw;
+  max-width: 100vw;
 }
 
 /*SECOND*/
 div#down-left {
-  left:25%;  /*60%*/ /*46%*/
+  left:25vw;  /*60%*/ /*46%*/
   position:fixed;
   bottom:0px;
   z-index:5; /*3*/
   max-width: 32.5%; /*65%*/
 }
-
-/* THIRD */
-div#down-right {
-  clear: all;
-  left: 50%;  /*87.5%*/ /*67%*/
-  position:absolute;
-  /*bottom:0px;*/
-  z-index:5;
-  width: 62%;
-  padding-right: 0;
-  height: auto;
-  top: 14%;
 }
 
 .margin {
@@ -116,52 +104,6 @@ u {
   text-decoration: none;
   display: inline;
 }
-/*
-#processinfo {
-  background-color: rgba(0,0,0,0.7); /*0.8
-  z-index: 9998;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  overflow: scroll;
-  position: fixed;
-}
-#processinfo figure {
-  color: #fff;
-  font-weight: 600;
-  font-smooth: always;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  z-index: 999999;
-  margin: 9vh 0 0 12vh;
-  width: 30%;
-  font-size: 2rem; /*2.1rem
-  line-height: 1.25; /*1.2
-  letter-spacing: .05rem;
-  text-transform: uppercase;
-  overflow-y: visible;
-}
-@media screen and (min-width: 1096px) and (max-width: 1400px) {
-#processinfo figure {
-  min-width: 430px;
-  }
-}
-@media screen and (min-width: 761px) and (max-width: 1095px) {
-#processinfo figure {
-  width: 430px;
-  }
-}
-@media screen and (min-width: 0px) and (max-width: 760px) {
-#processinfo figure {
-  width: 50%;
-  max-width: 430px;
-  }
-}
-#processinfo img {
-  margin: 0 0 10vh 0;
-}*/
-
 
 img {max-width: 100%}
 
